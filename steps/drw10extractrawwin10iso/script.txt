@@ -1,4 +1,8 @@
 cd /home/attune/windows_iso_data_for_winpe/windows10
+
+# Case insensitve globbing
+shopt -s nocaseglob
+
 ISO=$(ls *.ISO)
 echo $ISO
 7z x $ISO
