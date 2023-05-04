@@ -1,0 +1,6 @@
+{
+    "key": "attuneserver", 
+    "name": "Attune Server", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.LinuxServer"
+}

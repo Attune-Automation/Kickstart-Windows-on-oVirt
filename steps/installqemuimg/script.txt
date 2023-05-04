@@ -1,0 +1,10 @@
+package="qemu-img"
+
+count=$(dnf list installed | grep $package | wc -l)
+
+if [ $count -eq 0 ]
+then
+    dnf -y install qemu-img
+else
+    echo "$package already installed"
+fi

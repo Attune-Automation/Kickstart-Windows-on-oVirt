@@ -1,0 +1,71 @@
+export PATH=~/ks_ovirt_py_venv/bin:$PATH
+
+python3 <<"EOF"
+import logging
+import sys
+
+import ovirtsdk4 as sdk
+import ovirtsdk4.types as types
+
+logging.basicConfig(stream=sys.stdout, level=logging.INFO)
+logger = logging.getLogger("Attune")
+
+# This example will connect to the server, search for a VM by name and
+# remove it:
+
+# Create the connection to the server:
+connection = sdk.Connection(
+    url='https://{ovirtEngineServer.fqn}/ovirt-engine/api',
+    username='{ovirtEngineApiUser.user}',
+    password='{ovirtEngineApiUser.password}',
+    insecure=True,
+    debug=True,
+    log=logger,
+)
+logger.info("Connection Successful")
+
+logger.info("Getting system_service")
+system_service = connection.system_service()
+
+logger.info("Getting vms_service")
+vms_service = system_service.vms_service()
+
+# Find the VM:
+logger.info("Searchig for VM 'name={targetServer.fqn}'")
+vmSearch = vms_service.list(search='name={targetServer.fqn}')
+
+if not len(vmSearch):
+    logger.info("VM 'name={targetServer.fqn}' doesn't exist, exiting")
+    exit(0)
+
+logger.info("Found VM 'name={targetServer.fqn}'")
+vm = vmSearch[0]
+
+logger.info("Getting VM Service for VM ID=%s" % vm.id)
+vm_service = vms_service.vm_service(vm.id)
+
+logger.info("Get the CDROMS Service")
+cdroms_service = vm_service.cdroms_service()
+
+logger.info("Get the first CDROM")
+cdrom = cdroms_service.list()[0]
+
+logger.info("Get the CDROM service for the first drive")
+cdrom_service = cdroms_service.cdrom_service(cdrom.id)
+
+
+logger.info("Eject the CDROM on PowerOn")
+cdrom_service.update(
+    cdrom=types.Cdrom(
+        file=types.File(
+            id=''
+        ),
+    ),
+    current=False,
+)
+
+
+logger.info("Close the connection to the server")
+connection.close()
+
+EOF

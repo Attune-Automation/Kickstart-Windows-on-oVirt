@@ -1,0 +1,5 @@
+cd /home/attune/windows_iso_data_for_winpe/windows2019
+ISO=$(ls *.iso)
+echo $ISO
+7z x $ISO
+rm $ISO

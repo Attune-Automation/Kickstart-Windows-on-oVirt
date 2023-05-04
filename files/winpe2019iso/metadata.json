@@ -1,0 +1,10 @@
+{
+    "fileName": "WinPE_201_ISO.zip", 
+    "formatKey": "zip", 
+    "key": "winpe2019iso", 
+    "md5": "700a8f3dbcb412e7b664f80bf5124ed5", 
+    "name": "WinPE 2019 ISO", 
+    "remoteUri": null, 
+    "size": 307943471, 
+    "type": "com.servertribe.attune.tuples.FileArchiveLargeTuple"
+}

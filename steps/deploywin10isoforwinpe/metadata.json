@@ -1,0 +1,26 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "isBlueprint": true, 
+    "key": "deploywin10isoforwinpe", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "drw10createdirectory"
+        }, 
+        {
+            "order": 50, 
+            "stepKey": "drw10deploywinrawwin10iso"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "drw10extractrawwin10iso"
+        }, 
+        {
+            "order": 150, 
+            "stepKey": "drw10setpermissions"
+        }
+    ], 
+    "name": "Deploy Win10 ISO For WinPE", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

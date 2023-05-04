@@ -1,0 +1,18 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "isBlueprint": false, 
+    "key": "ksovirtrecreatevirtualmachinecleanup", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "ksovirtunloadisofromvm"
+        }, 
+        {
+            "order": 50, 
+            "stepKey": "ksovirtdeletefloatingisodisk"
+        }
+    ], 
+    "name": "KS oVirt Recreate Virtual Machine - Cleanup", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

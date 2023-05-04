@@ -1,0 +1,18 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "isBlueprint": true, 
+    "key": "setupattuneovirtimageio", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "installovirtimageio"
+        }, 
+        {
+            "order": 50, 
+            "stepKey": "installqemuimg"
+        }
+    ], 
+    "name": "Setup Attune ovirt-imageio", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

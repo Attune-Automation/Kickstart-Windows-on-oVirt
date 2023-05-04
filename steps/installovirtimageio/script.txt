@@ -1,0 +1,12 @@
+source ks_ovirt_py_venv/bin/activate
+
+count=$(python -m pip list | grep "ovirt-imageio" | wc -l)
+
+if [ $count -eq 0 ];
+then
+    python -m pip install ovirt-imageio
+else
+    echo "ovirt-imageio already installed."
+fi
+
+deactivate

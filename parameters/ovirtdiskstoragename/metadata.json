@@ -1,0 +1,6 @@
+{
+    "key": "ovirtdiskstoragename", 
+    "name": "oVirt: Disk Storage Name", 
+    "showInPlan": false, 
+    "type": "c.s.s.b.phv.Text"
+}

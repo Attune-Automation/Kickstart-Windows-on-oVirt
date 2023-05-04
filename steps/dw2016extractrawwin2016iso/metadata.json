@@ -1,0 +1,10 @@
+{
+    "enabled": true, 
+    "interpreter": 1, 
+    "key": "dw2016extractrawwin2016iso", 
+    "name": "DW2016 Extract RAW Win2016 ISO", 
+    "osCredKey": "linuxattuneuser", 
+    "serverKey": "targetserverlin", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

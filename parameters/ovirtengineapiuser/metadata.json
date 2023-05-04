@@ -1,0 +1,6 @@
+{
+    "key": "ovirtengineapiuser", 
+    "name": "oVirt: Engine API User", 
+    "showInPlan": false, 
+    "type": "c.s.s.b.phv.OsCred"
+}

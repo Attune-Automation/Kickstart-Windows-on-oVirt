@@ -1,0 +1,10 @@
+{
+    "enabled": true, 
+    "interpreter": 1, 
+    "key": "attunev4sasconfigureattunecfg", 
+    "name": "Attune v4 SAS Configure Attune CFG", 
+    "osCredKey": "linuxattuneuser", 
+    "serverKey": "attuneserver", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

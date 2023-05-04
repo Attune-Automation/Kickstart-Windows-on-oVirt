@@ -1,0 +1,72 @@
+export PATH=~/ks_ovirt_py_venv/bin:$PATH
+
+python3 <<"EOF"
+import logging
+import time
+import sys
+
+import ovirtsdk4 as sdk
+import ovirtsdk4.types as types
+
+logging.basicConfig(stream=sys.stdout, level=logging.INFO)
+logger = logging.getLogger("Attune")
+
+# This example will connect to the server and create a new virtual machine:
+
+# Create the connection to the server:
+connection = sdk.Connection(
+    url='https://{ovirtEngineServer.fqn}/ovirt-engine/api',
+    username='{ovirtEngineApiUser.user}',
+    password='{ovirtEngineApiUser.password}',
+    insecure=True,
+    debug=True,
+    log=logger,
+)
+logger.info("Connection Successful")
+
+# Find the service that manages VMs:
+logger.info("Getting system_service")
+system_service = connection.system_service()
+
+logger.info("Getting vms_service")
+vms_service = system_service.vms_service()
+
+logger.info("Searchig for VM 'name={targetServer.fqn}'")
+vm = vms_service.list(search='name={targetServer.fqn}')[0]
+
+logger.info("Getting VM Service for VM ID=%s" % vm.id)
+vm_service = vms_service.vm_service(vm.id)
+
+logger.info("Booting VM to CDROM")
+vm_service.start(
+    volatile=True,
+    vm=types.Vm(
+        os=types.OperatingSystem(
+            boot=types.Boot(
+                devices=[
+                    types.BootDevice.CDROM
+                ]
+            )
+        )
+    )
+)
+
+# additional documentation about attributes and types that can be changed:
+# https://your.rhv.host/ovirt-engine/api/model#types/vm
+# https://your.rhv.host/ovirt-engine/api/model#types/operating_system
+# https://your.rhv.host/ovirt-engine/api/model#types/boot
+# https://your.rhv.host/ovirt-engine/api/model#types/boot_device
+
+
+# Wait till the virtual machine is up:
+while True:
+    time.sleep(5)
+    vm = vm_service.get()
+    if vm.status == types.VmStatus.UP:
+        break
+
+# Close the connection to the server:
+connection.close()
+
+
+EOF

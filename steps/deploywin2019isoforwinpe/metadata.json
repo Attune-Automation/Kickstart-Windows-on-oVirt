@@ -1,0 +1,26 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "isBlueprint": true, 
+    "key": "deploywin2019isoforwinpe", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "drw2019createdirectory"
+        }, 
+        {
+            "order": 50, 
+            "stepKey": "drw2019deploywinrawwin2019iso"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "drw2019extractrawwin2019iso"
+        }, 
+        {
+            "order": 150, 
+            "stepKey": "drw2019setpermissions"
+        }
+    ], 
+    "name": "Deploy Win 2019 ISO For WinPE", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

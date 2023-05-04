@@ -1,0 +1,110 @@
+export PATH="/home/attune/qemu-img-6.2/bin:$PATH"
+export PATH=~/ks_ovirt_py_venv/bin:$PATH
+
+python3 <<"EOF"
+
+import logging
+import time
+import sys
+
+import ovirt_imageio
+from ovirt_imageio import client
+
+import ovirtsdk4 as sdk
+import ovirtsdk4.types as types
+
+import os
+
+logging.basicConfig(stream=sys.stdout, level=logging.INFO)
+logger = logging.getLogger("Attune")
+
+# This example will connect to the server and transfer the ISO
+
+# Create the connection to the server:
+connection = sdk.Connection(
+    url='https://{ovirtEngineServer.fqn}/ovirt-engine/api',
+    username='{ovirtEngineApiUser.user}',
+    password='{ovirtEngineApiUser.password}',
+    insecure=True,
+    debug=True,
+    log=logger,
+)
+logger.info("Connection Successful")
+
+logger.info("Getting system_service")
+system_service = connection.system_service()
+
+logger.info("Getting the disks service for the new disk")
+disks_service = system_service.disks_service()
+
+diskName='kickstart_{targetServer.fqn}.iso'
+search_string="name=%s" % diskName
+
+logger.info("Getting the disks service for the new disk")
+disks_service = system_service.disks_service()
+disks = disks_service.list(search=search_string)
+
+if len(disks) == 0:
+    logger.info("No ISO disks found")
+    exit(1)
+    
+disk_to_use = disks[0]
+
+os.chdir("kickstart")
+
+# client.upload() constant parameters
+cafile=None
+secure=False
+
+# The disk name and the ISO to upload are named the same
+iso_to_upload = diskName
+
+transfers_service = system_service.image_transfers_service()
+
+if disk_to_use.status == types.DiskStatus.LOCKED:
+    logger.info("Disk %s is locked" % disk_to_use.name)
+    exit(1)
+    
+
+image_transfer_service = transfers_service.add(
+    types.ImageTransfer(
+        disk=types.Disk(
+            id=disk_to_use.id
+        )
+    )
+)
+
+image_transfer_service2 = transfers_service.image_transfer_service(image_transfer_service.id)
+
+while image_transfer_service.phase == types.ImageTransferPhase.INITIALIZING:
+    logger.info("waiting for image transfer to pass phase INITIALIZING")
+    time.sleep(1)
+    image_transfer_service = image_transfer_service2.get()
+
+logger.info("image_transfer_service transfer_url=%s, proxy_url=%s" % (image_transfer_service.transfer_url, image_transfer_service.proxy_url))
+
+client.upload(iso_to_upload, image_transfer_service.transfer_url, cafile, secure=secure)
+
+image_transfer_service2.finalize()
+
+while image_transfer_service.phase == types.ImageTransferPhase.TRANSFERRING:
+    logger.info("image_transfer_service.phase = %s" % image_transfer_service.phase)
+    time.sleep(1)
+    image_transfer_service = image_transfer_service2.get()
+
+while image_transfer_service.phase == types.ImageTransferPhase.FINALIZING_SUCCESS:
+    logger.info("image_transfer_service.phase = %s" % image_transfer_service.phase)
+    time.sleep(1)
+    image_transfer_service = image_transfer_service2.get()
+
+logger.info("image_transfer_service.phase = %s" % image_transfer_service.phase)
+
+if image_transfer_service.phase == types.ImageTransferPhase.FINISHED_SUCCESS:
+    logger.info("Image transfer session was successfully closed, and the targeted image was verified and ready to be used.")
+else:
+    logger.info("Image transfer failure")
+
+# Close the connection to the server:
+connection.close()
+
+EOF

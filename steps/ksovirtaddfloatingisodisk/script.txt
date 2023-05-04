@@ -1,0 +1,77 @@
+export PATH=~/ks_ovirt_py_venv/bin:$PATH
+
+python3 <<"EOF"
+
+import logging
+import os
+import time
+import sys
+
+import ovirtsdk4 as sdk
+import ovirtsdk4.types as types
+
+logging.basicConfig(stream=sys.stdout, level=logging.INFO)
+logger = logging.getLogger("Attune")
+
+# This example will connect to the server and create a new floating disk for the ISO.
+
+# get the size of the disk required to fit the ISO.
+os.chdir("{ksVmwareAttuneBaseDir}")
+cwd = os.getcwd()
+
+diskName='kickstart_{targetServer.fqn}.iso'
+# Add 1kB buffer to disk, disk_size is in bytes
+disk_size = os.path.getsize(diskName) + 1024*1024
+
+# Create the connection to the server:
+connection = sdk.Connection(
+    url='https://{ovirtEngineServer.fqn}/ovirt-engine/api',
+    username='{ovirtEngineApiUser.user}',
+    password='{ovirtEngineApiUser.password}',
+    insecure=True,
+    debug=True,
+    log=logger,
+)
+logger.info("Connection Successful")
+
+logger.info("Getting system_service")
+system_service = connection.system_service()
+
+logger.info("Getting the disks service")
+disks_service = system_service.disks_service()
+  
+logger.info("CREATING disk %s", diskName)
+
+disk = disks_service.add(
+    types.Disk(
+        name=diskName,
+        description=diskName,
+        format=types.DiskFormat.RAW,
+        provisioned_size=disk_size,
+        storage_domains=[
+            types.StorageDomain(
+                name='{ovirtDiskStorageName}',
+            ),
+        ],
+        content_type=types.DiskContentType.ISO,
+        storage_type=types.DiskStorageType.IMAGE
+    )
+)
+
+logger.info("Getting the disk service for the new disk")
+disk_service = disks_service.disk_service(disk.id)
+
+logger.info("Starting to wait for disk to become online")
+while True:
+    logger.info("Wait for disk to become online [disk.status=%s]" % disk.status)
+    time.sleep(2)
+    disk = disk_service.get()
+    if disk.status == types.DiskStatus.OK:
+        break
+
+logger.info("Disk is online")
+
+# Close the connection to the server:
+connection.close()
+
+EOF

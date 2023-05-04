@@ -1,0 +1,9 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "isBlueprint": true, 
+    "key": "attunev4setupwinesupport", 
+    "links": [], 
+    "name": "Attune v4 Setup WinE Support", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

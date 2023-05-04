@@ -1,0 +1,34 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "isBlueprint": true, 
+    "key": "blueprintsforkickstartwinpeovirt", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "winpekickstartwin10ovirt"
+        }, 
+        {
+            "order": 50, 
+            "stepKey": "winpekickstartwin2019ovirt"
+        }, 
+        {
+            "order": 200, 
+            "stepKey": "deploywin10isoforwinpe"
+        }, 
+        {
+            "order": 250, 
+            "stepKey": "deploywin2019isoforwinpe"
+        }, 
+        {
+            "order": 300, 
+            "stepKey": "attunev4setupwinpesupport"
+        }, 
+        {
+            "order": 350, 
+            "stepKey": "setupattuneovirtimageio"
+        }
+    ], 
+    "name": "Blueprints For Kickstart WinPE oVirt", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

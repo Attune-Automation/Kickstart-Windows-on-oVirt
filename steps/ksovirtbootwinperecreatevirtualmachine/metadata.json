@@ -1,0 +1,42 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "isBlueprint": false, 
+    "key": "ksovirtbootwinperecreatevirtualmachine", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "ksovirtdeletevm"
+        }, 
+        {
+            "order": 20, 
+            "stepKey": "ksovirtcreatevm"
+        }, 
+        {
+            "order": 40, 
+            "stepKey": "ksovirtaddosdisk"
+        }, 
+        {
+            "order": 60, 
+            "stepKey": "ksovirtaddnic"
+        }, 
+        {
+            "order": 110, 
+            "stepKey": "ksovirtaddfloatingisodisk"
+        }, 
+        {
+            "order": 160, 
+            "stepKey": "ksovirtimagelotransferisotofloatingdisk"
+        }, 
+        {
+            "order": 210, 
+            "stepKey": "ksovirtloaddatastorageisointovm"
+        }, 
+        {
+            "order": 310, 
+            "stepKey": "ksovirtboottoiso"
+        }
+    ], 
+    "name": "KS oVirt Boot WinPE Recreate Virtual Machine", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

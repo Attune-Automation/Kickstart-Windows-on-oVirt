@@ -1,0 +1,5 @@
+{
+    "key": "ovirtguestdrivers", 
+    "name": "oVirt Guest Drivers", 
+    "type": "com.servertribe.attune.tuples.FileArchiveVersionedTuple"
+}

@@ -1,0 +1,5 @@
+{
+    "key": "winwin2019unattendedconfigwithdrivers", 
+    "name": "WIN Win2019 Unattended Config with Drivers", 
+    "type": "com.servertribe.attune.tuples.FileArchiveVersionedTuple"
+}

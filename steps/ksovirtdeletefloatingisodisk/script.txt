@@ -1,0 +1,71 @@
+export PATH=~/ks_ovirt_py_venv/bin:$PATH
+
+python3 <<"EOF"
+
+import logging
+import time
+import sys
+
+import ovirt_imageio
+from ovirt_imageio import client
+
+import ovirtsdk4 as sdk
+import ovirtsdk4.types as types
+
+import os
+
+logging.basicConfig(stream=sys.stdout, level=logging.INFO)
+logger = logging.getLogger("Attune")
+
+# This example will connect to the server and transfer the ISO
+
+# Create the connection to the server:
+connection = sdk.Connection(
+    url='https://{ovirtEngineServer.fqn}/ovirt-engine/api',
+    username='{ovirtEngineApiUser.user}',
+    password='{ovirtEngineApiUser.password}',
+    insecure=True,
+    debug=True,
+    log=logger,
+)
+logger.info("Connection Successful")
+
+logger.info("Getting system_service")
+system_service = connection.system_service()
+
+logger.info("Getting vms_service")
+vms_service = system_service.vms_service()
+
+logger.info("Getting the disks service for the new disk")
+disks_service = system_service.disks_service()
+
+logger.info("Searchig for VM 'name={targetServer.fqn}'")
+vmSearch = vms_service.list(search='name={targetServer.fqn}')
+
+if not len(vmSearch):
+    logger.info("VM 'name={targetServer.fqn}' doesn't exist, exiting")
+    exit(0)
+
+logger.info("Found VM 'name={targetServer.fqn}'")
+vm = vmSearch[0]
+
+
+diskName='kickstart_{targetServer.fqn}.iso'
+
+search_string="name=%s" % diskName
+print("search_string=%s" % search_string)
+
+logger.info("Getting the disks service for the new disk")
+disks_service = system_service.disks_service()
+disks = disks_service.list(search=search_string)
+
+
+if not len(disks):
+    logger.info("%s is already deleted." % diskName)
+
+for disk in disks:
+    logger.info("deleteing disk = %s, id=%s, status=%s" % (disk.name, disk.id, disk.status))
+    disk_service = disks_service.disk_service(disk.id)
+    disk_service.remove()
+
+EOF

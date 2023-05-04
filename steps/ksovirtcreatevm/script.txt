@@ -1,0 +1,62 @@
+export PATH=~/ks_ovirt_py_venv/bin:$PATH
+
+python3 <<"EOF"
+import logging
+import sys
+
+import ovirtsdk4 as sdk
+import ovirtsdk4.types as types
+
+logging.basicConfig(stream=sys.stdout, level=logging.INFO)
+logger = logging.getLogger("Attune")
+
+# This example will connect to the server and create a new virtual machine:
+
+# Create the connection to the server:
+connection = sdk.Connection(
+    url='https://{ovirtEngineServer.fqn}/ovirt-engine/api',
+    username='{ovirtEngineApiUser.user}',
+    password='{ovirtEngineApiUser.password}',
+    insecure=True,
+    debug=True,
+    log=logger,
+)
+logger.info("Connection Successful")
+
+# Find the service that manages VMs:
+logger.info("Getting system_service")
+system_service = connection.system_service()
+
+logger.info("Getting vms_service")
+vms_service = system_service.vms_service()
+
+# Use the "add" method to create a new virtual machine:
+vms_service.add(
+    types.Vm(
+        name='{targetServer.fqn}',
+        time_zone=types.TimeZone(name="{ovirtTimeZone}"),
+        cluster=types.Cluster(
+            name='{ovirtClusterName}',
+        ),
+        template=types.Template(
+            name='Blank',
+        ),
+        memory={ovirtMemorySize}*1024*1024*1024,
+        memory_policy=types.MemoryPolicy(
+            ballooning=False,
+            guaranteed={ovirtMemorySize}*1024*1024*1024
+        ),
+        cpu=types.Cpu(
+            architecture=types.Architecture.X86_64,
+            topology=types.CpuTopology(
+                cores={ovirtCpuCount},
+                sockets=1,
+                threads=1
+            )
+        )
+    ),
+)
+
+# Close the connection to the server:
+connection.close()
+EOF

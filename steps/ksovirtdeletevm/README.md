@@ -1,0 +1,1 @@
+https://github.com/oVirt/ovirt-engine-sdk/blob/master/sdk/examples/remove_vm.py

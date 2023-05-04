@@ -1,0 +1,40 @@
+{
+    "archiveKey": "winwin10unattendedconfigovirtwithdrivers", 
+    "deployPath": "{ksVmwareAttuneBaseDir}/build-{targetServer.fqn}", 
+    "enabled": true, 
+    "key": "ksovirtwin10deployunattendedconfig", 
+    "makoFileNames": [
+        "autounattend.xml"
+    ], 
+    "makoParameters": [
+        {
+            "name": "targetServer", 
+            "parameterKey": "targetserver", 
+            "parameterType": "c.s.s.b.phv.Server"
+        }, 
+        {
+            "name": "subnet", 
+            "parameterKey": "targetsubnet", 
+            "parameterType": "c.s.s.b.phv.Ip4Subnet"
+        }, 
+        {
+            "name": "adminUser", 
+            "parameterKey": "windowsadministrator", 
+            "parameterType": "c.s.s.b.phv.WinOsCred"
+        }, 
+        {
+            "name": "kickstartOrganisationName", 
+            "parameterKey": "kickstartorganisationname", 
+            "parameterType": "c.s.s.b.phv.Text"
+        }, 
+        {
+            "name": "ksWindowsInterfaceAlias", 
+            "parameterKey": "kswindowsinterfacealias", 
+            "parameterType": "c.s.s.b.phv.Text"
+        }
+    ], 
+    "name": "KS oVirt Win10 Deploy Unattended Config", 
+    "osCredKey": "linuxattuneuser", 
+    "serverKey": "attuneosbuildserver", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileCompiledTuple"
+}

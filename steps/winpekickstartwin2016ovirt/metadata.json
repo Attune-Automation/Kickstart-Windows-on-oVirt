@@ -1,0 +1,74 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "isBlueprint": true, 
+    "key": "winpekickstartwin2016ovirt", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "kscleanbuildfiles"
+        }, 
+        {
+            "order": 50, 
+            "stepKey": "kswin10deploywinpeisoovirt"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "ksextractwinpeiso"
+        }, 
+        {
+            "order": 150, 
+            "stepKey": "ksextractwinpebootimg"
+        }, 
+        {
+            "order": 200, 
+            "stepKey": "ksmovebootimgtoextractedwinpefolder"
+        }, 
+        {
+            "order": 250, 
+            "stepKey": "ksovirtdeployovirtdrivers"
+        }, 
+        {
+            "order": 300, 
+            "stepKey": "ksmoveovirtdriverstoextractedwinpefolder"
+        }, 
+        {
+            "order": 350, 
+            "stepKey": "ksovirtwin2019deployunattendedconfig"
+        }, 
+        {
+            "order": 400, 
+            "stepKey": "ksmoveautounattendxmltoextractedwinpefolder"
+        }, 
+        {
+            "order": 450, 
+            "stepKey": "modifywinpebootwim"
+        }, 
+        {
+            "order": 500, 
+            "stepKey": "kswinpecreatebootiso"
+        }, 
+        {
+            "order": 550, 
+            "stepKey": "ksovirtrecreatevirtualmachinecleanup"
+        }, 
+        {
+            "order": 600, 
+            "stepKey": "ksovirtbootwinperecreatevirtualmachine"
+        }, 
+        {
+            "order": 650, 
+            "stepKey": "kswinwinrmhttpswait120s"
+        }, 
+        {
+            "order": 700, 
+            "stepKey": "ksovirtrecreatevirtualmachinecleanup"
+        }, 
+        {
+            "order": 750, 
+            "stepKey": "kscleanbuildfiles"
+        }
+    ], 
+    "name": "WinPE Kickstart Win2016+oVirt", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

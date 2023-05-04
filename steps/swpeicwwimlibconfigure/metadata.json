@@ -1,0 +1,10 @@
+{
+    "enabled": true, 
+    "interpreter": 1, 
+    "key": "swpeicwwimlibconfigure", 
+    "name": "SWPE ICW wimlib Configure", 
+    "osCredKey": "linuxattuneuser", 
+    "serverKey": "targetserverlin", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

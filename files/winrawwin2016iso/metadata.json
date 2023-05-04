@@ -1,0 +1,10 @@
+{
+    "fileName": "Windows_Server_2016_Datacenter_EVAL_en-us_14393_refresh.zip", 
+    "formatKey": "zip", 
+    "key": "winrawwin2016iso", 
+    "md5": "890295fb33aea1ef183be9ecae44f58c", 
+    "name": "WIN Raw Win2016 ISO", 
+    "remoteUri": null, 
+    "size": 6754893415, 
+    "type": "com.servertribe.attune.tuples.FileArchiveLargeTuple"
+}

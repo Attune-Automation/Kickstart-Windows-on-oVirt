@@ -1,0 +1,11 @@
+{
+    "archiveKey": "winrawwin2016iso", 
+    "deployPath": "/home/attune/windows_iso_data_for_winpe/windows2016", 
+    "enabled": true, 
+    "key": "dw2016deploywinrawwin2016iso", 
+    "name": "DW2016 Deploy WIN RAW Win2016 ISO", 
+    "osCredKey": "linuxattuneuser", 
+    "serverKey": "targetserverlin", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
+    "unpack": true
+}

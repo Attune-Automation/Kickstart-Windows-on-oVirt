@@ -1,0 +1,6 @@
+{
+    "key": "ovirtmemorysize", 
+    "name": "oVirt: Memory Size", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.Text"
+}

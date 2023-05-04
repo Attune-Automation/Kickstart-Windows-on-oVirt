@@ -1,0 +1,6 @@
+{
+    "key": "ovirtnicinterface", 
+    "name": "oVirt: NIC Interface", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.Text"
+}

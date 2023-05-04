@@ -1,0 +1,10 @@
+{
+    "enabled": true, 
+    "interpreter": 1, 
+    "key": "swpessschecksmbconf", 
+    "name": "SWPES SS Check smb.conf", 
+    "osCredKey": "linuxattuneuser", 
+    "serverKey": "targetserverlin", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

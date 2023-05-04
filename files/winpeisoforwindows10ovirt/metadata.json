@@ -1,0 +1,10 @@
+{
+    "fileName": "22_v1_WinPE_ISO_for_Windows_10_oVirt.zip", 
+    "formatKey": "zip", 
+    "key": "winpeisoforwindows10ovirt", 
+    "md5": "302c9aa17c1d58092a44d39f4c539515", 
+    "name": "WinPE ISO for Windows 10 oVirt", 
+    "remoteUri": null, 
+    "size": 287929901, 
+    "type": "com.servertribe.attune.tuples.FileArchiveLargeTuple"
+}

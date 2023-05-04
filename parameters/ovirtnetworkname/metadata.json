@@ -1,0 +1,6 @@
+{
+    "key": "ovirtnetworkname", 
+    "name": "oVirt: Network Name", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.Text"
+}

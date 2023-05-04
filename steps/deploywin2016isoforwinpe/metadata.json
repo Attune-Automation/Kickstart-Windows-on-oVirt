@@ -1,0 +1,26 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "isBlueprint": true, 
+    "key": "deploywin2016isoforwinpe", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "dw2016createdirectory"
+        }, 
+        {
+            "order": 50, 
+            "stepKey": "dw2016deploywinrawwin2016iso"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "dw2016extractrawwin2016iso"
+        }, 
+        {
+            "order": 150, 
+            "stepKey": "dw2016setpermissions"
+        }
+    ], 
+    "name": "Deploy Win 2016 ISO For WinPE", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}
