@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "0f30c628-cafd-4d1f-9173-789cacd4b1ea", 
     "interpreter": 1, 
     "key": "drw2019setpermissions", 
     "name": "DRW2019 Set Permissions", 

@@ -1,4 +1,5 @@
 {
+    "externalUuid4": "aae34dfc-54e2-479e-831c-05455e47711d", 
     "key": "ovirtnetworkname", 
     "name": "oVirt: Network Name", 
     "showInPlan": true, 

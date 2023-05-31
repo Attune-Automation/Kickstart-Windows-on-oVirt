@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "5467a5f7-9256-4d8a-8ad1-e3fbff812367", 
     "interpreter": 1, 
     "key": "drw10setpermissions", 
     "name": "DRW10 Set Permissions", 

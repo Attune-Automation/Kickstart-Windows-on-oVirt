@@ -2,6 +2,7 @@
     "archiveKey": "winrawwin2019iso", 
     "deployPath": "/home/attune/windows_iso_data_for_winpe/windows2019", 
     "enabled": true, 
+    "externalUuid4": "640c4582-8018-48b0-8708-0d22dc5b0122", 
     "key": "drw2019deploywinrawwin2019iso", 
     "name": "DRW2019 Deploy WIN RAW Win2019 ISO", 
     "osCredKey": "linuxattuneuser", 

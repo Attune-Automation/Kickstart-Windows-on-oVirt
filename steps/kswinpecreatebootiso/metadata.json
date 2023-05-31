@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "12a53f15-0ce7-4733-a93c-0f8d83c647ba", 
     "interpreter": 1, 
     "key": "kswinpecreatebootiso", 
     "name": "KS WinPE Create Boot ISO", 

@@ -1,6 +1,7 @@
 {
     "concurrency": 1, 
     "enabled": true, 
+    "externalUuid4": "6cb5eb6f-6cea-4d56-b0f0-922840c8ace9", 
     "isBlueprint": true, 
     "key": "setupattuneovirtimageio", 
     "links": [

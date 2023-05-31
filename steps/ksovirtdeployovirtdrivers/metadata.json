@@ -2,6 +2,7 @@
     "archiveKey": "ovirtguestdrivers", 
     "deployPath": "{ksVmwareAttuneBaseDir}/build-{targetServer.fqn}", 
     "enabled": true, 
+    "externalUuid4": "aaac2459-e637-4d1e-ba1e-2f44c6e92867", 
     "key": "ksovirtdeployovirtdrivers", 
     "name": "KS oVirt Deploy oVirt Drivers", 
     "osCredKey": "linuxattuneuser", 

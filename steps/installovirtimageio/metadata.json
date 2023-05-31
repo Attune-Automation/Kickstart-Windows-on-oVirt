@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "6b61bf2c-cd3d-4fda-8c91-210080756df0", 
     "interpreter": 1, 
     "key": "installovirtimageio", 
     "name": "Install ovirt-imageio", 

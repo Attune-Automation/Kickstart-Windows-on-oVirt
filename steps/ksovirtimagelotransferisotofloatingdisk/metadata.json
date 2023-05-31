@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "6f2daa71-e275-4725-9712-c140907f55cd", 
     "interpreter": 1, 
     "key": "ksovirtimagelotransferisotofloatingdisk", 
     "name": "KS oVirt ImagelO Transfer ISO To Floating Disk", 

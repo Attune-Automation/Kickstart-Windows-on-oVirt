@@ -1,6 +1,7 @@
 {
     "concurrency": 1, 
     "enabled": true, 
+    "externalUuid4": "57b2470d-c8f3-4205-ae96-37fd9c39361c", 
     "isBlueprint": false, 
     "key": "ksovirtbootwinperecreatevirtualmachine", 
     "links": [

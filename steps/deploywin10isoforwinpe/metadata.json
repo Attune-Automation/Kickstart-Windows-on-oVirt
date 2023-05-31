@@ -1,6 +1,7 @@
 {
     "concurrency": 1, 
     "enabled": true, 
+    "externalUuid4": "50efd29a-a3ee-4ba2-9fba-c52fcf93a4f6", 
     "isBlueprint": true, 
     "key": "deploywin10isoforwinpe", 
     "links": [

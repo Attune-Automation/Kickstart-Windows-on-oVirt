@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "6a0f37a9-e61e-4e37-9843-82a662c20846", 
     "interpreter": 1, 
     "key": "ksmoveautounattendxmltoextractedwinpefolder", 
     "name": "KS Move autounattend.xml to Extracted WinPE Folder", 

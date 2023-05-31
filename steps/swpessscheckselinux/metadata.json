@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "b9c05bd3-082a-4632-abcb-5779a84d5cc1", 
     "interpreter": 1, 
     "key": "swpessscheckselinux", 
     "name": "SWPES SS Check SELinux", 

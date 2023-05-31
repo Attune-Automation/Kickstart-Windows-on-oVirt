@@ -1,4 +1,5 @@
 {
+    "externalUuid4": "fc59e8d1-e7ee-45eb-a0e4-c6f8bdd5d2d2", 
     "key": "ovirtdiskstoragename", 
     "name": "oVirt: Disk Storage Name", 
     "showInPlan": false, 

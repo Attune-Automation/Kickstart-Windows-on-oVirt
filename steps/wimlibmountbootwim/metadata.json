@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "90e17af7-5e23-4b70-8222-487afc3e9e29", 
     "interpreter": 1, 
     "key": "wimlibmountbootwim", 
     "name": "wimlib Mount boot.wim", 

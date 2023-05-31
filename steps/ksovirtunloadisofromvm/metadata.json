@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "9c2c2db6-ec52-4e1a-93dc-8d9ca93b4167", 
     "interpreter": 1, 
     "key": "ksovirtunloadisofromvm", 
     "name": "KS oVirt Unload ISO from VM", 

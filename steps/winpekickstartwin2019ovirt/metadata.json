@@ -1,6 +1,7 @@
 {
     "concurrency": 1, 
     "enabled": true, 
+    "externalUuid4": "5ad67a8e-1ac2-481f-8039-c0251249ee9f", 
     "isBlueprint": true, 
     "key": "winpekickstartwin2019ovirt", 
     "links": [

@@ -1,6 +1,7 @@
 {
     "concurrency": 1, 
     "enabled": true, 
+    "externalUuid4": "77ae37cd-9bd2-4ea6-8e46-52ddb779ee38", 
     "isBlueprint": true, 
     "key": "blueprintsforkickstartwinpeovirt", 
     "links": [

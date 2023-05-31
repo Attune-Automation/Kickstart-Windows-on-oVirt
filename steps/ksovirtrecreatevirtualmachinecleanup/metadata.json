@@ -1,6 +1,7 @@
 {
     "concurrency": 1, 
     "enabled": true, 
+    "externalUuid4": "19f3e316-b2d5-4db2-96cc-5e8a70c5d567", 
     "isBlueprint": false, 
     "key": "ksovirtrecreatevirtualmachinecleanup", 
     "links": [

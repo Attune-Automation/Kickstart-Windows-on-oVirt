@@ -2,6 +2,7 @@
     "archiveKey": "win10enterpriseiso", 
     "deployPath": "/home/attune/windows_iso_data_for_winpe/windows10", 
     "enabled": true, 
+    "externalUuid4": "3e3bfce4-c69c-47bd-a1e3-24f45aef2f07", 
     "key": "drw10deploywinrawwin10iso", 
     "name": "DRW10 Deploy WIN RAW Win10 ISO", 
     "osCredKey": "linuxattuneuser", 

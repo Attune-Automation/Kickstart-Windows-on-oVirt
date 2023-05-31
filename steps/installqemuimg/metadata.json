@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "c631986e-0b02-4587-acc4-d1c33ed4f9bf", 
     "interpreter": 1, 
     "key": "installqemuimg", 
     "name": "Install qemu-img", 

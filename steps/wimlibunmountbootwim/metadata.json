@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "089f7c9d-f897-453f-a504-060f73837302", 
     "interpreter": 1, 
     "key": "wimlibunmountbootwim", 
     "name": "wimlib Unmount boot.wim", 

@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "c556a06e-1cf0-44e1-8eb7-bacf8df6cc22", 
     "interpreter": 1, 
     "key": "ksmovebootimgtoextractedwinpefolder", 
     "name": "KS Move boot.img to Extracted WinPE Folder", 

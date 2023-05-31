@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "c9ba6e3c-4463-497a-9caf-9778977239d3", 
     "interpreter": 1, 
     "key": "sssetupsharedfolder", 
     "name": "SS Setup Shared Folder", 

@@ -1,6 +1,7 @@
 {
     "concurrency": 1, 
     "enabled": true, 
+    "externalUuid4": "c4477707-590b-423c-864e-3f2c383411ed", 
     "isBlueprint": true, 
     "key": "attunev4setupwinpesupport", 
     "links": [

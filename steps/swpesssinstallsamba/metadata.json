@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "a9e9ebb2-5307-4ecd-9dd7-d14c44eb2c5b", 
     "interpreter": 1, 
     "key": "swpesssinstallsamba", 
     "name": "SWPES SS Install Samba", 

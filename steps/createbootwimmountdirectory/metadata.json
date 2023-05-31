@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "ab78f903-566d-461c-80e7-c1c031f32ed0", 
     "interpreter": 1, 
     "key": "createbootwimmountdirectory", 
     "name": "Create boot.wim Mount Directory", 

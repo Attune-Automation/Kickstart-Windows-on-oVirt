@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "64b20e5c-34d0-4ae7-9cda-d19c3c11d291", 
     "interpreter": 1, 
     "key": "swpessscheckservicesmb", 
     "name": "SWPES SS Check Service smb", 

@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "91370b23-32af-438d-b1e7-cfbb4db38d1c", 
     "interpreter": 1, 
     "key": "swpeicwwimlibmake", 
     "name": "SWPE ICW wimlib Make", 

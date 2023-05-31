@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "44c423a1-f4ec-45f3-90f1-42ae11a4c183", 
     "interpreter": 1, 
     "key": "ksovirtaddosdisk", 
     "name": "KS oVirt Add OS Disk", 

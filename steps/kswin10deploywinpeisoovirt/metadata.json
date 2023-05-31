@@ -2,6 +2,7 @@
     "archiveKey": "winpeisoforwindows10ovirt", 
     "deployPath": "{ksVmwareAttuneBaseDir}/build-{targetServer.fqn}", 
     "enabled": true, 
+    "externalUuid4": "d0ffba34-7d63-47b2-8419-871509ed6dff", 
     "key": "kswin10deploywinpeisoovirt", 
     "name": "KS Win10 Deploy WinPE ISO oVirt", 
     "osCredKey": "linuxattuneuser", 

@@ -1,4 +1,5 @@
 {
+    "externalUuid4": "9ac1b023-2e52-4fc5-89e2-56eb360dfa73", 
     "key": "winpestartnetcmd", 
     "name": "WinPE startnet.cmd", 
     "type": "com.servertribe.attune.tuples.FileArchiveVersionedTuple"

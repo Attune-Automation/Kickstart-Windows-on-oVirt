@@ -2,6 +2,7 @@
     "archiveKey": "winpestartnetcmd", 
     "deployPath": "{ksVmwareAttuneBaseDir}/build-{targetServer.fqn}/WinPE_BootImageDir/Windows/System32", 
     "enabled": true, 
+    "externalUuid4": "629fb192-a9af-45d0-9265-7725241cce56", 
     "key": "pushstartnetcmd", 
     "makoFileNames": [
         "startnet.cmd"

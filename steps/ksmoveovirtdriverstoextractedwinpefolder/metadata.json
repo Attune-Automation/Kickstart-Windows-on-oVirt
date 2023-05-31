@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "a2b4db2d-bf69-4c8a-b4f2-f51d7f24ec60", 
     "interpreter": 1, 
     "key": "ksmoveovirtdriverstoextractedwinpefolder", 
     "name": "KS Move oVirt Drivers to Extracted WinPE Folder", 

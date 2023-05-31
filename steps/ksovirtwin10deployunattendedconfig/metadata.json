@@ -2,6 +2,7 @@
     "archiveKey": "winwin10unattendedconfigovirtwithdrivers", 
     "deployPath": "{ksVmwareAttuneBaseDir}/build-{targetServer.fqn}", 
     "enabled": true, 
+    "externalUuid4": "e95f9716-ddb0-495a-ac1b-0524811a1f2f", 
     "key": "ksovirtwin10deployunattendedconfig", 
     "makoFileNames": [
         "autounattend.xml"

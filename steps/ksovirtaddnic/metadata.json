@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "c2b79cd0-237c-4b47-879e-8dd1f38e734e", 
     "interpreter": 1, 
     "key": "ksovirtaddnic", 
     "name": "KS oVirt Add NIC", 

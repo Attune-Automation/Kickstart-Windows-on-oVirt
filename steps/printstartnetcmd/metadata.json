@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "fc55b893-d319-45c5-ae0a-222d24de305c", 
     "interpreter": 1, 
     "key": "printstartnetcmd", 
     "name": "Print startnet.cmd", 

@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "ca3eada2-cb4a-4c2e-81f8-1ddcc68c9b8b", 
     "interpreter": 1, 
     "key": "ksextractwinpebootimg", 
     "name": "KS Extract WinPE boot.img", 

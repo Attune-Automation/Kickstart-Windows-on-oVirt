@@ -1,6 +1,7 @@
 {
     "concurrency": 1, 
     "enabled": true, 
+    "externalUuid4": "f142f72c-e89c-4456-a065-db149d3f2baa", 
     "isBlueprint": true, 
     "key": "attunev4swpeinstallcwimlib", 
     "links": [

@@ -1,6 +1,7 @@
 {
     "concurrency": 1, 
     "enabled": true, 
+    "externalUuid4": "5c533bea-9e3b-42cd-bce8-196299d65f9b", 
     "isBlueprint": true, 
     "key": "deploywin2016isoforwinpe", 
     "links": [

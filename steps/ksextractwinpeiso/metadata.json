@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "e6e03481-f252-42cd-9be0-15fcb4f43a34", 
     "interpreter": 1, 
     "key": "ksextractwinpeiso", 
     "name": "KS Extract WinPE ISO", 

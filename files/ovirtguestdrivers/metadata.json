@@ -1,4 +1,5 @@
 {
+    "externalUuid4": "dea1ca65-34fe-4fe2-9daf-c9e73687da92", 
     "key": "ovirtguestdrivers", 
     "name": "oVirt Guest Drivers", 
     "type": "com.servertribe.attune.tuples.FileArchiveVersionedTuple"

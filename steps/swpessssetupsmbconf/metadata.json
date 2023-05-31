@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "620f6c9b-8c8f-4f76-9888-ba581081f943", 
     "interpreter": 1, 
     "key": "swpessssetupsmbconf", 
     "name": "SWPES SS Setup smb.conf", 

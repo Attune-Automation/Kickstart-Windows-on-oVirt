@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "df329e3e-f85f-4849-b1a0-1bc5716f6d5d", 
     "interpreter": 1, 
     "key": "swpeicwrhel8installepelrepository", 
     "name": "SWPE ICW RHEL8 Install EPEL Repository", 

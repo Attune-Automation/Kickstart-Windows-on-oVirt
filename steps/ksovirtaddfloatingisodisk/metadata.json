@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "fefcb7bb-a059-46ed-b986-c6a7548dc0d3", 
     "interpreter": 1, 
     "key": "ksovirtaddfloatingisodisk", 
     "name": "KS oVirt Add Floating ISO Disk", 

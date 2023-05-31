@@ -1,5 +1,6 @@
 {
     "enabled": true, 
+    "externalUuid4": "36b89358-d6f0-4a84-8b1c-3c13cb74fad5", 
     "interpreter": 1, 
     "key": "dnfupdate", 
     "name": "dnf update", 

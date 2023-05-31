@@ -2,6 +2,7 @@
     "archiveKey": "winrawwin2016iso", 
     "deployPath": "/home/attune/windows_iso_data_for_winpe/windows2016", 
     "enabled": true, 
+    "externalUuid4": "bd21e58c-3578-4ae4-ad42-6de966d0da2e", 
     "key": "dw2016deploywinrawwin2016iso", 
     "name": "DW2016 Deploy WIN RAW Win2016 ISO", 
     "osCredKey": "linuxattuneuser", 

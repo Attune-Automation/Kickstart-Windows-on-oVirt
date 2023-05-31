@@ -1,6 +1,7 @@
 {
     "concurrency": 1, 
     "enabled": true, 
+    "externalUuid4": "cc48bc51-bc49-4dfa-96b4-20d3b89009be", 
     "isBlueprint": true, 
     "key": "deploywin2019isoforwinpe", 
     "links": [

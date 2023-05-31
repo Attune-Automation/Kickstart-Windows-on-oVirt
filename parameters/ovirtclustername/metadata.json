@@ -1,4 +1,5 @@
 {
+    "externalUuid4": "2a20714a-daaf-430e-ac5d-7bde88cdf788", 
     "key": "ovirtclustername", 
     "name": "oVirt: Cluster Name", 
     "showInPlan": false, 
