@@ -53,6 +53,9 @@ vms_service.add(
                 sockets=1,
                 threads=1
             )
+        ),
+        bios=types.Bios (
+            type=types.BiosType.{ovirtBiosType}
         )
     ),
 )
