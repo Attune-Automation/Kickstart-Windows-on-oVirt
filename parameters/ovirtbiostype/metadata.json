@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "4dda2e28-1c28-42be-9d13-3facb89f32b8", 
+    "key": "ovirtbiostype", 
+    "name": "oVirt: Bios Type", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.Text"
+}
