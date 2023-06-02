@@ -1,11 +1,11 @@
 {
-    "externalUuid4": "3367f46d-4f11-48f6-b317-039b5db2816f", 
-    "fileName": "22_v1_WinPE_ISO_for_Windows_10_oVirt.zip", 
+    "externalUuid4": "6f014f73-e5cd-4a3d-8ca7-2a364508b21b", 
+    "fileName": "WinPE_amd64_oVirt.zip", 
     "formatKey": "zip", 
     "key": "winpeisoforwindows10ovirt", 
-    "md5": "302c9aa17c1d58092a44d39f4c539515", 
+    "md5": "9fcc3ee9710f9ebfa3666891460435d0", 
     "name": "WinPE ISO for Windows 10 oVirt", 
     "remoteUri": null, 
-    "size": 287929901, 
+    "size": 288567040, 
     "type": "com.servertribe.attune.tuples.FileArchiveLargeTuple"
 }

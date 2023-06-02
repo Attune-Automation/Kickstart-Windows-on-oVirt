@@ -11,26 +11,26 @@
         }, 
         {
             "order": 50, 
-            "stepKey": "kswin2019deploywinpeisoesxiovirt"
-        }, 
-        {
-            "order": 100, 
-            "stepKey": "ksextractwinpeiso"
+            "stepKey": "kswin10deploywinpeisoovirt"
         }, 
         {
             "order": 150, 
-            "stepKey": "ksextractwinpebootimg"
+            "stepKey": "ksextractwinpeiso"
         }, 
         {
             "order": 200, 
-            "stepKey": "ksmovebootimgtoextractedwinpefolder"
+            "stepKey": "ksextractwinpebootimg"
         }, 
         {
             "order": 250, 
-            "stepKey": "ksovirtdeployovirtdrivers"
+            "stepKey": "ksmovebootimgtoextractedwinpefolder"
         }, 
         {
             "order": 300, 
+            "stepKey": "ksovirtdeployovirtdrivers"
+        }, 
+        {
+            "order": 350, 
             "stepKey": "ksmoveovirtdriverstoextractedwinpefolder"
         }, 
         {

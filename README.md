@@ -122,6 +122,9 @@ This Project contains the following Blueprints.
 ### Deploy Win 2019 ISO For WinPE
 
 
+### KS oVirt Boot WinPE Recreate Virtual Machine
+
+
 ### Setup Attune ovirt-imageio
 
 
@@ -132,9 +135,6 @@ This Project contains the following Blueprints.
 
 
 ### WinPE Kickstart Win2019+oVirt
-
-
-### KS oVirt Boot WinPE Recreate Virtual Machine
 
 
 
@@ -155,6 +155,14 @@ ESXi Deployments = "Ethernet0"
 This is the "InternetAlias" of the interface shown when you run "get-netipaddress" from powershell on the machine. |
 | Linux: Attune User | Linux/Unix Credential | `linuxattuneuser` | None |
 | Linux: Root User | Linux/Unix Credential | `linuxrootuser` | None |
+| oVirt: Bios Type | Text | `ovirtbiostype` | Valid Values are (they must be in all capitals):
+1. CLUSTER_DEFAULT - Use the cluster-wide default.
+2. I440FX_SEA_BIOS - i440fx chipset with SeaBIOS.
+3. Q35_OVMF - q35 chipset with OVMF (UEFI) BIOS.
+4. Q35_SEA_BIOS - q35 chipset with SeaBIOS.
+5. Q35_SECURE_BOOT- q35 chipset with OVMF (UEFI) BIOS with SecureBoot enabled.
+
+https://ovirt.github.io/ovirt-engine-api-model/4.5/#types/bios_type |
 | oVirt: Cluster Name | Text | `ovirtclustername` | None |
 | oVirt: CPU Count | Text | `ovirtcpucount` | None |
 | oVirt: Disk Interface | Text | `ovirtdiskinterface` | SATA or IDE required for Windows
@@ -175,14 +183,6 @@ For example, the server being built if the procedure is building a server. |
 | Target Subnet | Network IPv4 Subnet | `targetsubnet` | None |
 | Windows: Administrator | Windows Credential | `windowsadministrator` | The windows administrator user |
 | WinPE Samba Server | Linux/Unix Node | `winpesambaserver` | None |
-| oVirt: Bios Type | Text | `ovirtbiostype` | Valid Values are (they must be in all capitals):
-1. CLUSTER_DEFAULT - Use the cluster-wide default.
-2. I440FX_SEA_BIOS - i440fx chipset with SeaBIOS.
-3. Q35_OVMF - q35 chipset with OVMF (UEFI) BIOS.
-4. Q35_SEA_BIOS - q35 chipset with SeaBIOS.
-5. Q35_SECURE_BOOT- q35 chipset with OVMF (UEFI) BIOS with SecureBoot enabled.
-
-https://ovirt.github.io/ovirt-engine-api-model/4.5/#types/bios_type |
 
 
 
@@ -195,12 +195,12 @@ https://ovirt.github.io/ovirt-engine-api-model/4.5/#types/bios_type |
 | oVirt Guest Drivers | Version Controlled Files | from c:\program files\virtio-win |
 | WIN10 Enterprise ISO | Large Archives | None |
 | WinPE 2019 ISO | Large Archives | None |
-| WinPE ISO for Windows 10 oVirt | Large Archives | None |
 | WinPE startnet.cmd | Version Controlled Files | None |
 | WIN Raw Win2016 ISO | Large Archives | https://www.microsoft.com/en-us/evalcenter/download-windows-server-2016 |
 | WIN Raw Win2019 ISO | Large Archives | None |
 | WIN Win10 Unattended Config oVirt with Drivers | Version Controlled Files | None |
 | WIN Win2019 Unattended Config with Drivers | Version Controlled Files | None |
+| WinPE ISO for Windows 10 oVirt | Large Archives | None |
 
 
 
