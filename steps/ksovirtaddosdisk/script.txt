@@ -44,7 +44,7 @@ disk_attachment = disk_attachments_service.add(
             name=diskName,
             description='{targetServer.fqn}-disk0',
             format=types.DiskFormat.COW,
-            provisioned_size=50 * 2**30,
+            provisioned_size=100 * 2**30,
             storage_domains=[
                 types.StorageDomain(
                     name='{ovirtDiskStorageName}',

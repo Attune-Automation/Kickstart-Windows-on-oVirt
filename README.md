@@ -195,12 +195,12 @@ For example, the server being built if the procedure is building a server. |
 | oVirt Guest Drivers | Version Controlled Files | from c:\program files\virtio-win |
 | WIN10 Enterprise ISO | Large Archives | None |
 | WinPE 2019 ISO | Large Archives | None |
+| WinPE ISO for Windows 10 oVirt | Large Archives | None |
 | WinPE startnet.cmd | Version Controlled Files | None |
 | WIN Raw Win2016 ISO | Large Archives | https://www.microsoft.com/en-us/evalcenter/download-windows-server-2016 |
 | WIN Raw Win2019 ISO | Large Archives | None |
 | WIN Win10 Unattended Config oVirt with Drivers | Version Controlled Files | None |
 | WIN Win2019 Unattended Config with Drivers | Version Controlled Files | None |
-| WinPE ISO for Windows 10 oVirt | Large Archives | None |
 
 
 
