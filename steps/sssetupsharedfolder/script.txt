@@ -2,4 +2,7 @@ shared_dir="/home/attune/windows_iso_data_for_winpe"
 mkdir -p $shared_dir
 chmod -R 0775 $shared_dir
 chown -R nobody:attune $shared_dir
-chcon -t samba_share_t $shared_dir
+
+chcon -h system_u:object_r:samba_share_t $shared_dir
+# This was originally
+#chcon samba_share_t $shared_dir
