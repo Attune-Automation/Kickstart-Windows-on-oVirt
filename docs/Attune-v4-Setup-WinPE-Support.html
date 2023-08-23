@@ -1,0 +1,2193 @@
+
+<!doctype html>
+<html lang="en">
+
+
+
+
+<head>
+    <title>How to Attune v4 Setup WinPE Support - Attune Automation</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title"
+          content="How to Attune v4 Setup WinPE Support - Attune Automation">
+    <meta name="description"
+          content="">
+    <meta name="robots"
+          content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+
+    <meta property="og:locale" content="en_AU" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title"
+          content="HowTo Attune v4 Setup WinPE Support - Attune Automation" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="Attune Automation" />
+    <meta property="article:section" content="IT Instruction" />
+
+    <meta name="twitter:title"
+          content="How to Attune v4 Setup WinPE Support - Attune Automation" />
+    <meta name="twitter:description" content="" />
+
+    <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-180x180.png">
+    <meta name="msapplication-TileImage" content="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-270x270.png">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-5TZQZNDJCD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-5TZQZNDJCD');
+    </script>
+</head>
+
+
+<body>
+
+<!-- Project NavBar -->
+
+<div class="bg-white border-bottom box-shadow sticky-top mb-3">
+<div class="container px-0">
+    <div class="row px-0">
+        <div class="col d-flex flex-column flex-lg-row align-items-center px-0
+            py-3">
+            <a class="navbar-brand my-0 mr-lg-auto"
+                  href="https://www.servertribe.com/"
+                  target="_blank">
+                    <img
+                        src="https://www.servertribe.com/wp-content/uploads/2022/06/AttuneLogoV2_powered_by.png"
+                        alt="Attune - Powered by ServerTribe"
+                        class="img-fluid navbar-img">
+            </a>
+            <nav class="my-2 my-lg-0 mr-lg-3">
+                <a class="p-2 text-dark" href="http://doc.servertribe.com/"
+                   target="_blank">
+                    Documentation
+                </a>
+                <a class="p-2 text-dark"
+                   href="https://discord.com/invite/3YpJsagqUn"
+                   target="_blank">
+                    Discord
+                </a>
+                <a class="p-2 text-dark" href="https://github.com/Attune-Automation"
+                   target="_blank">
+                    GitHub
+                </a>
+                <a class="p-2 text-dark" href="https://www.servertribe.com/learn/"
+                   target="_blank">
+                    Learn
+                </a>
+            </nav>
+            <a class="btn btn-outline-primary"
+               href="https://www.servertribe.com/download-attune-registration/"
+               target="_blank">
+                Download NOW!
+            </a>
+        </div>
+    </div>
+</div></div>
+
+<!-- Project breadcrumbs -->
+
+<!-- Project breadcrumbs -->
+<div class="container px-0">
+    <div class="row">
+        <nav class="col px-0" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">
+                    Kickstart WinPE oVirt
+                    </a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <strong>Attune v4 Setup WinPE Support</strong>
+                </li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<!-- Blueprint Header -->
+
+<div class="container px-0">
+    <!-- Blueprint name and description -->
+    <div class="row">
+        <div class="col px-0">
+            <h1 class="text-left">
+                How to Attune v4 Setup WinPE Support
+            </h1>
+        </div>
+    </div>
+
+<!-- Blueprint Description -->
+    <div class="row pt-4">
+        <div class="col-6 px-0">
+            <h6 class="text-left">
+                This documentation is generated by
+                <a href="https://www.servertribe.com/"
+                    class="badge badge-primary"
+                    target="_blank">
+                    Attune
+                </a>
+            </h6>
+        </div>
+        <div class="col-6 align-self-end text-right px-0">
+            <h6 class="text-right">
+                <a href="https://www.youtube.com/@servertribe"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    YouTube
+                </a>
+                <a href="https://github.com/Attune-Automation"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    GitHub
+                </a>
+                <a href="https://discord.com/invite/3YpJsagqUn"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    Discord
+                </a>
+                <a href="https://www.linkedin.com/company/servertribe/"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    LinkedIn
+                </a>
+                <a href="http://doc.servertribe.com/"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    Documentation
+                </a>
+            </h6>
+        </div>
+    </div>
+    <hr>
+</div>
+
+<div class="documentation">
+    <div class="container px-0">
+        <div class="row">
+
+<!-- Blueprint ToC -->
+
+
+            <div class="toc col-lg-2 px-0 pr-5">
+                <div class="container px-0 pt-3">
+                    <p class="pb-2">
+                        <strong>Contents</strong>
+                    </p>
+                    <p class="text-muted">
+                        <a href="#top">
+                            <strong>Attune v4 Setup WinPE Support</strong>
+                        </a>
+                    </p>
+
+
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#attunev4swpessetupsamba">
+                            <strong>Step 1 -</strong> Attune v4 SWPES Setup Samba
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#swpesssinstallsamba">
+                            <strong>Step 1.1 -</strong> SWPES SS Install Samba
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#sssetupsharedfolder">
+                            <strong>Step 1.2 -</strong> SS Setup Shared Folder
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#swpessssetupsmbconf">
+                            <strong>Step 1.3 -</strong> SWPES SS Setup smb.conf
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#swpessschecksmbconf">
+                            <strong>Step 1.4 -</strong> SWPES SS Check smb.conf
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#swpessssetupfirewall">
+                            <strong>Step 1.5 -</strong> SWPES SS Setup Firewall
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#swpessssetupselinux">
+                            <strong>Step 1.6 -</strong> SWPES SS Setup SELinux
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#swpessscheckselinux">
+                            <strong>Step 1.7 -</strong> SWPES SS Check SELinux
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#swpesssstartsmb">
+                            <strong>Step 1.8 -</strong> SWPES SS Start smb
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#swpessscheckservicesmb">
+                            <strong>Step 1.9 -</strong> SWPES SS Check Service smb
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#swpesssstartservicenmb">
+                            <strong>Step 1.10 -</strong> SWPES SS Start Service nmb
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#swpessscheckservicenmb">
+                            <strong>Step 1.11 -</strong> SWPES SS Check Service nmb
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#swpessssetattunefolderpermissions">
+                            <strong>Step 1.12 -</strong> SWPES SS Set Attune Folder Permissions
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#attunev4swpeinstallcwimlib">
+                            <strong>Step 2 -</strong> Attune v4 SWPE Install C wimlib
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#swpeicwrhel8installepelrepository">
+                            <strong>Step 2.1 -</strong> SWPE ICW RHEL8 Install EPEL Repository
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#dnfupdate">
+                            <strong>Step 2.2 -</strong> dnf update
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#swpeicwinstallwimlibdependencies">
+                            <strong>Step 2.3 -</strong> SWPE ICW Install wimlib Dependencies
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#swpeicwinstallautotools">
+                            <strong>Step 2.4 -</strong> SWPE ICW Install autotools
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#swpeicwclonewimlib">
+                            <strong>Step 2.5 -</strong> SWPE ICW Clone wimlib
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#swpeicwrunautotools">
+                            <strong>Step 2.6 -</strong> SWPE ICW Run autotools
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#swpeicwwimlibconfigure">
+                            <strong>Step 2.7 -</strong> SWPE ICW wimlib Configure
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#swpeicwwimlibmake">
+                            <strong>Step 2.8 -</strong> SWPE ICW wimlib Make
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#swpeicwwimlibinstall">
+                            <strong>Step 2.9 -</strong> SWPE ICW wimlib Install
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#swpeicwwimlibaddsymboliclinks">
+                            <strong>Step 2.10 -</strong> SWPE ICW wimlib Add Symbolic Links
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#attunev4sasconfigureattunecfg">
+                            <strong>Step 3 -</strong> Attune v4 SAS Configure Attune CFG
+                        </a>
+                    </p>
+
+
+                </div>
+            </div>
+
+<!-- Blueprint Contents -->
+            <div class="col-lg-8 pt-3">
+                <div class="container">
+
+
+        <div class="jumbotron">
+            <p class="display-3 text-center">
+                <strong>Automate This</strong>
+            </p>
+            <p class="lead text-center">
+                Use the <strong>Attune GUI</strong> for your Scripts
+            </p>
+            <p class="lead">
+                <ol>
+                    <a href="https://www.servertribe.com/download-attune-registration/"
+                        target="_blank">
+                        <span class="badge badge-primary">1</span>
+                        Download Attune
+                        <i class="fa-solid fa-download fa-beat-fade" style="color: #0197ff;"></i>
+                    </a>
+                </ol>
+                <ol>
+                    <a href="https://github.com/attune-Automation/"
+                        target="_blank">
+                        <span class="badge badge-primary">2</span>
+                         Copy the Attune Project URL
+                         <i class="fa-brands fa-github fa-fade"></i>
+                    </a>
+                </ol>
+                <ol>
+                    <a href="https://servertribe-attune.readthedocs.io/en/latest/howto/design_workspace/clone_project.html"
+                        target="_blank">
+                        <span class="badge badge-primary">3</span>
+                        Clone the Project in Attune
+                         <i class="fa-solid fa-book fa-fade" style="color: #0197ff;"></i>
+                    </a>
+                </ol>
+                <ol>
+                    <a href="https://www.youtube.com/watch?v=GCWDI29rDV0"
+                        target="_blank">
+                        <span class="badge badge-primary">4</span>
+                        Plan your Job(s)
+                        <i class="fa-brands fa-youtube fa-fade" style="color: #0197ff;"></i>
+                    </a>
+                </ol>
+                <ol>
+                    <a href="https://www.youtube.com/watch?v=b7DhFcURkZg"
+                        target="_blank">
+                        <span class="badge badge-primary">5</span>
+                        Run your Job(s)
+                        <i class="fa-brands fa-youtube fa-fade" style="color: #0197ff;"></i>
+                    </a>
+                </ol>
+            </p>
+            <p class="lead text-center">
+                You've automated: <strong>Attune v4 Setup WinPE Support</strong>
+            </p>
+            <hr class="my-4 text-center">
+            <div class="col px-0">
+                <p class="text-center">
+                    Get the most out of automation with our get started
+                    videos, product demonstrations, and more.
+                </p>
+                <p class="lead text-center">
+                    <a class="btn btn-primary btn-lg"
+                       href="https://www.servertribe.com/learn/"
+                       target="_blank"
+                       role="button">
+                        Learn Attune Automation
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>The following steps will guide you through the manual process.</p>
+        </div>
+
+<!-- Blueprint Steps -->
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="attunev4swpessetupsamba">
+                            <a href="#attunev4swpessetupsamba">
+                                <strong>Step 1 -</strong> Attune v4 SWPES Setup Samba
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="swpesssinstallsamba">
+                            <a href="#swpesssinstallsamba">
+                                <strong>Step 1.1 -</strong> SWPES SS Install Samba
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxrootuser}@{targetserverlin}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+dnf -y install samba samba-common samba-client
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="sssetupsharedfolder">
+                            <a href="#sssetupsharedfolder">
+                                <strong>Step 1.2 -</strong> SS Setup Shared Folder
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                <p>https://www.linuxquestions.org/questions/linux-general-1/chcon-can't-apply-partial-context-to-unlabeled-file-371977/</p>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+shared_dir=&quot;/home/attune/windows_iso_data_for_winpe&quot;
+mkdir -p $shared_dir
+chmod -R 0775 $shared_dir
+chown -R nobody:attune $shared_dir
+
+chcon -h system_u:object_r:samba_share_t $shared_dir
+# This was originally
+#chcon samba_share_t $shared_dir
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="swpessssetupsmbconf">
+                            <a href="#swpessssetupsmbconf">
+                                <strong>Step 1.3 -</strong> SWPES SS Setup smb.conf
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd /etc/samba/
+
+cat &lt;&lt; EOF &gt; smb.conf
+# See smb.conf.example for a more detailed config file or
+# read the smb.conf manpage.
+# Run &#x27;testparm&#x27; to verify the config is correct after
+# you modified it.
+
+[global]
+	workgroup = WORKGROUP
+	security = user
+	passdb backend = tdbsam
+	map to guest = bad user
+
+[share]
+        comment = public share
+        path = /home/{linuxAttuneUser.user}/windows_iso_data_for_winpe
+        browseable = yes
+        guest ok = yes
+        guest only = yes
+        writable = yes
+        read only = no
+EOF
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="swpessschecksmbconf">
+                            <a href="#swpessschecksmbconf">
+                                <strong>Step 1.4 -</strong> SWPES SS Check smb.conf
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{targetserverlin}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+testparm --suppress-prompt
+exit $?
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="swpessssetupfirewall">
+                            <a href="#swpessssetupfirewall">
+                                <strong>Step 1.5 -</strong> SWPES SS Setup Firewall
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxrootuser}@{targetserverlin}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+firewall-cmd --add-service=samba --zone=public --permanent
+firewall-cmd --reload
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="swpessssetupselinux">
+                            <a href="#swpessssetupselinux">
+                                <strong>Step 1.6 -</strong> SWPES SS Setup SELinux
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+if sestatus | grep -i &quot;SELinux status:&quot; | grep -q &quot;enabled&quot;
+then
+    setsebool -P samba_export_all_ro=1 samba_export_all_rw=1
+    semanage fcontext -at samba_share_t &quot;/home/attune/windows_iso_data_for_winpe(/.*)?&quot;
+else
+    echo &quot;SElinux is disabled&quot;
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="swpessscheckselinux">
+                            <a href="#swpessscheckselinux">
+                                <strong>Step 1.7 -</strong> SWPES SS Check SELinux
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{targetserverlin}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+if sestatus | grep -i &quot;SELinux status:&quot; | grep -q &quot;enabled&quot;
+then
+    line_count=$(getsebool -a | grep samba_export | wc -l)
+    
+    if [ $line_count -eq 2 ]
+    then
+        echo &quot;ok&quot;
+    else
+        echo &quot;wrong number of occurrences for samba_export&quot;
+        exit 1
+    fi
+else
+    echo &quot;SElinux is disabled&quot;
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="swpesssstartsmb">
+                            <a href="#swpesssstartsmb">
+                                <strong>Step 1.8 -</strong> SWPES SS Start smb
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxrootuser}@{targetserverlin}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+systemctl restart smb
+systemctl enable smb
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="swpessscheckservicesmb">
+                            <a href="#swpessscheckservicesmb">
+                                <strong>Step 1.9 -</strong> SWPES SS Check Service smb
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{targetserverlin}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+service=&quot;smb&quot;
+line_count=$(systemctl status $service | grep running | wc -l)
+if [ $line_count -eq 0 ]
+then
+    echo &quot;$service is not running&quot;
+    exit 1
+else
+    echo &quot;ok&quot;
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="swpesssstartservicenmb">
+                            <a href="#swpesssstartservicenmb">
+                                <strong>Step 1.10 -</strong> SWPES SS Start Service nmb
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxrootuser}@{targetserverlin}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+systemctl restart nmb
+systemctl enable nmb
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="swpessscheckservicenmb">
+                            <a href="#swpessscheckservicenmb">
+                                <strong>Step 1.11 -</strong> SWPES SS Check Service nmb
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{targetserverlin}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+service=&quot;nmb&quot;
+line_count=$(systemctl status $service | grep running | wc -l)
+if [ $line_count -eq 0 ]
+then
+    echo &quot;$service is not running&quot;
+    exit 1
+else
+    echo &quot;ok&quot;
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="swpessssetattunefolderpermissions">
+                            <a href="#swpessssetattunefolderpermissions">
+                                <strong>Step 1.12 -</strong> SWPES SS Set Attune Folder Permissions
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd /home
+chmod -v +rx attune
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="attunev4swpeinstallcwimlib">
+                            <a href="#attunev4swpeinstallcwimlib">
+                                <strong>Step 2 -</strong> Attune v4 SWPE Install C wimlib
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="swpeicwrhel8installepelrepository">
+                            <a href="#swpeicwrhel8installepelrepository">
+                                <strong>Step 2.1 -</strong> SWPE ICW RHEL8 Install EPEL Repository
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxrootuser}@{targetserverlin}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+count=$(dnf repolist enabled | grep epel | wc -l)
+
+if [ $count -eq 0 ]
+then
+    dnf -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+else
+    echo &quot;EPEL repository already installed.&quot;
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="dnfupdate">
+                            <a href="#dnfupdate">
+                                <strong>Step 2.2 -</strong> dnf update
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+dnf -y update
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="swpeicwinstallwimlibdependencies">
+                            <a href="#swpeicwinstallwimlibdependencies">
+                                <strong>Step 2.3 -</strong> SWPE ICW Install wimlib Dependencies
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+if [ -f /usr/local/lib/libwim.so ]
+then
+    echo &quot;libwim.so already installed&quot;
+else
+    dnf -y install libxml2 libxml2-devel \
+        fuse fuse-devel \
+        ntfs-3g ntfs-3g-devel \
+        openssl openssl-devel \
+        mtools syslinux cabextract
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="swpeicwinstallautotools">
+                            <a href="#swpeicwinstallautotools">
+                                <strong>Step 2.4 -</strong> SWPE ICW Install autotools
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+dnf -y install autoconf automake libtool
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="swpeicwclonewimlib">
+                            <a href="#swpeicwclonewimlib">
+                                <strong>Step 2.5 -</strong> SWPE ICW Clone wimlib
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{targetserverlin}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+wimlib_dir=&quot;wimlib&quot;
+
+if [ -d $wimlib_dir ]
+then
+    echo &quot;Already cloned&quot;
+else
+    git clone https://github.com/ebiggers/wimlib.git
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="swpeicwrunautotools">
+                            <a href="#swpeicwrunautotools">
+                                <strong>Step 2.6 -</strong> SWPE ICW Run autotools
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+if [ -f /usr/local/lib/libwim.so ]
+then
+    echo &quot;libwim.so already installed&quot;
+else
+    wimlib_dir=&quot;wimlib&quot;
+    cd $wimlib_dir
+    libtoolize
+    aclocal
+    autoconf
+    autoheader
+    automake --add-missing
+    autoreconf
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="swpeicwwimlibconfigure">
+                            <a href="#swpeicwwimlibconfigure">
+                                <strong>Step 2.7 -</strong> SWPE ICW wimlib Configure
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+if [ -f /usr/local/lib/libwim.so ]
+then
+    echo &quot;libwim.so already installed&quot;
+else
+    wimlib_dir=&quot;wimlib&quot;
+    cd $wimlib_dir
+    ./configure
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="swpeicwwimlibmake">
+                            <a href="#swpeicwwimlibmake">
+                                <strong>Step 2.8 -</strong> SWPE ICW wimlib Make
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+if [ -f /usr/local/lib/libwim.so ]
+then
+    echo &quot;libwim.so already installed&quot;
+else
+    wimlib_dir=&quot;wimlib&quot;
+    cd $wimlib_dir
+    make
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="swpeicwwimlibinstall">
+                            <a href="#swpeicwwimlibinstall">
+                                <strong>Step 2.9 -</strong> SWPE ICW wimlib Install
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxrootuser}@{targetserverlin}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+if [ -f /usr/local/lib/libwim.so ]
+then
+    echo &quot;libwim.so already installed&quot;
+else
+    cd /home/attune/wimlib
+    make install
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="swpeicwwimlibaddsymboliclinks">
+                            <a href="#swpeicwwimlibaddsymboliclinks">
+                                <strong>Step 2.10 -</strong> SWPE ICW wimlib Add Symbolic Links
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+if [ -f /usr/local/lib/libwim.so ]
+then
+    echo &quot;libwim.so already installed&quot;
+else
+    ln -s /usr/local/lib/libwim.so /usr/lib/libwim.so
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="attunev4sasconfigureattunecfg">
+                            <a href="#attunev4sasconfigureattunecfg">
+                                <strong>Step 3 -</strong> Attune v4 SAS Configure Attune CFG
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{attuneserver}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+[ -d ~/attune.home ] || mkdir ~/attune.home
+
+cat &lt;&lt;&quot;EOF&quot; &gt;&gt; ~/attune.home/config.cfg
+
+[disk_storage]
+home_path = /home/attune/attune.home
+archives_path = %(home_path)s/archives_contents
+tmp_path = %(home_path)s/tmp
+archives_unlocked_contents = %(home_path)s/archives_unlocked_contents
+
+
+[alembic]
+# path to migration scripts
+script_location = /home/attune/python/lib/python2.7/site-packages/attune/alembic
+sourceless = true
+sqlalchemy.url = postgresql://{postgresqlServiceUser.user}:{postgresqlServiceUser.password}@localhost/attune
+
+[user]
+admin.pass = {attuneAdminUser.password}
+
+EOF
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+                    <div class="row pt-5">
+                        <div class="col">
+                            <h2>Completed</h2>
+                            <p>
+                                You have completed this instruction.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- Download Attune Ad -->
+
+            <div class="toc col-lg-2 px-0">
+                <div class="container px-0 pt-3 pl-5">
+                    <div class="card border-light mb-3" style="max-width: 18rem;">
+                        <div class="card-body attune-ad">
+                            <img
+                                src="https://www.servertribe.com/wp-content/uploads/2022/06/AttuneLogoV2_powered_by.png"
+                                alt="Attune - Powered by ServerTribe"
+                                class="img-fluid">
+                            <p class="card-title mt-3 text-center">
+                                <strong>Automate with Attune</strong>
+                            </p>
+                            <p class="card-text text-center">
+                                Download the Attune Community Edition.
+                            </p>
+                            <p class="text-center">
+                                <a href="https://www.servertribe.com/download-attune-registration/"
+                                   class="btn btn-primary mt-3">
+                                    DOWNLOAD!!!
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+<!-- Join Discord -->
+
+        <div class="row py-5">
+            <div class="jumbotron">
+              <h1 class="display-4 text-center">
+                  Discuss this Project in Discord
+              </h1>
+              <p class="lead">
+
+                  Join our Discord channel and connect with like-minded individuals who
+                  share your passion. Engage in lively discussions, gain valuable insights,
+                  and stay updated on the latest trends in our industry. Don't miss out on
+                  this opportunity to network, learn, and grow together.
+              </p>
+              <hr class="my-4 text-center">
+                <div class="col px-0">
+                  <p class="text-center">
+                      Click the link below and become a part of our vibrant community on
+                      Discord today!
+                  </p>
+                  <p class="lead text-center">
+                    <a class="btn btn-primary btn-lg"
+                       href="https://discord.com/invite/3YpJsagqUn"
+                       role="button">
+                        Join NOW!!!
+                    </a>
+                  </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Project Footer -->
+
+<footer class="footer fixed-bottom bg-white border-top box-shadow">
+      <div class="container px-0">
+          <div class="row">
+              <div class="col px-0">
+                  <a class="my-0 mr-lg-auto"
+                     href="https://www.servertribe.com/"
+                     target="_blank">
+                      <img
+                          src="https://www.servertribe.com/wp-content/uploads/2022/06/AttuneLogoV2_powered_by.png"
+                          alt="Attune - Powered by ServerTribe"
+                          class="img-fluid navbar-img">
+                  </a>
+              </div>
+          </div>
+      </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+</body>
+</html>

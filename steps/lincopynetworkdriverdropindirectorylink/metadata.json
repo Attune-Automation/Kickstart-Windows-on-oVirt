@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "7c387ab2-d4cb-40b4-bff0-f57a337526ac", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "1ce213f8-91bc-4568-83fe-df0c3a6e539c", 
+    "key": "lincopynetworkdriverdropindirectorylink", 
+    "name": "LIN Copy Network Driver Drop In Directory (link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

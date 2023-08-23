@@ -1,0 +1,25 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "7eac3284-9e7d-41e1-96dc-acf098416045", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "b670dbf0-1589-49d6-8902-beeb778b7288", 
+    "key": "esxiwinperecreatewinbiosvirtualmachinelink", 
+    "name": "ESXi WinPE Recreate Win BIOS Virtual Machine (link)", 
+    "parameterMap": [
+        {
+            "childParameterName": null, 
+            "childParameterType": "c.s.s.b.phv.Text", 
+            "childParameterUuid": "92d11185-28c3-4c1e-9f4e-bf3d4c31cd13", 
+            "childProjectName": null, 
+            "childProjectUuid": "8140ab94-a4a9-481f-8ab1-9ee055ef78be", 
+            "parentParameterKey": null, 
+            "parentStaticTextValue": "windows9Server64Guest"
+        }
+    ], 
+    "projectName": "", 
+    "projectUuid": "8140ab94-a4a9-481f-8ab1-9ee055ef78be", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

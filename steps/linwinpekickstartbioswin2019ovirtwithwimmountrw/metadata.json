@@ -1,0 +1,60 @@
+{
+    "actionOnStepFail": "stop", 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "4ca62cd8-4333-47c1-9f54-f9b8b85cc05d", 
+    "isBlueprint": true, 
+    "key": "linwinpekickstartbioswin2019ovirtwithwimmountrw", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "lincleanbuildfileslink"
+        }, 
+        {
+            "order": 50, 
+            "stepKey": "lincopywinpeplainbiosisotowinpeisolink"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "linextractwinpeisotowinpestaginglink"
+        }, 
+        {
+            "order": 150, 
+            "stepKey": "lindeployvmwaredriverslink"
+        }, 
+        {
+            "order": 200, 
+            "stepKey": "lincopynetworkdriverdropindirectorylink"
+        }, 
+        {
+            "order": 250, 
+            "stepKey": "lindeploystartnetcmdforwinpeonesxiforwin2019link"
+        }, 
+        {
+            "order": 300, 
+            "stepKey": "lincreatecustomwimcontainingscriptforwinrmhttpslink"
+        }, 
+        {
+            "order": 350, 
+            "stepKey": "lindeploywin2019unattendedconfigesxibiosfordriversonxdrivelink"
+        }, 
+        {
+            "order": 400, 
+            "stepKey": "linmodifybootwimlink"
+        }, 
+        {
+            "order": 450, 
+            "stepKey": "lincreatebioswinpebootisogroupfromwinpestaginglink"
+        }, 
+        {
+            "order": 500, 
+            "stepKey": "esxiwinperecreatewinbiosvirtualmachinelink"
+        }, 
+        {
+            "order": 550, 
+            "stepKey": "kscleanbuildfiles"
+        }
+    ], 
+    "name": "LIN WinPE Kickstart BIOS Win 2019+oVirt with wimmountrw", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

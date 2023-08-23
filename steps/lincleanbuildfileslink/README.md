@@ -1,0 +1,1 @@
+Removes the directory `{ksVmwareAttuneBaseDir}/build-{kickstartedNode.fqn}` and ISO file at `{ksVmwareAttuneBaseDir}/kickstart_{kickstartedNode.fqn}.iso`. 

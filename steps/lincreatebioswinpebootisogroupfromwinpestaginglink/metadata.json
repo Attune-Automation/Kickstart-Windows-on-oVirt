@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "2504683a-0bbe-4a4c-9ae2-dae63f7d773b", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "c7b10d3c-7a9c-425c-9a73-0e6f0e2655af", 
+    "key": "lincreatebioswinpebootisogroupfromwinpestaginglink", 
+    "name": "LIN Create BIOS WinPE Boot ISO Group from winpe_staging (link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "955e5967-2dc5-40bf-a88b-c6934587919c", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "7342ec55-de53-443c-b51f-bef710c70640", 
+    "key": "linextractwinpeisotowinpestaginglink", 
+    "name": "LIN Extract winpe.iso to winpe_staging (link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "78b36dec-af9f-4f10-afcf-9875296f4b56", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "4be57d34-d82d-4d0d-92a2-119c515223f7", 
+    "key": "lindeployvmwaredriverslink", 
+    "name": "LIN Deploy VMWare Drivers (link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "8140ab94-a4a9-481f-8ab1-9ee055ef78be", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

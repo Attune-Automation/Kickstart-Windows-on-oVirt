@@ -1,0 +1,25 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "bc7db717-ab07-414c-87c4-e00b6708e454", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "f86c3211-8710-4ac8-95a8-fdbbe0348f12", 
+    "key": "lindeploystartnetcmdforwinpeonesxiforwin2019link", 
+    "name": "LIN Deploy startnet.cmd for WinPE on ESXi for Win2019 (link)", 
+    "parameterMap": [
+        {
+            "childParameterName": null, 
+            "childParameterType": "c.s.s.b.phv.Text", 
+            "childParameterUuid": "6942c5d9-c0a5-4dd8-a8b8-d43c0dc75654", 
+            "childProjectName": null, 
+            "childProjectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+            "parentParameterKey": null, 
+            "parentStaticTextValue": "Ethernet Instance 0"
+        }
+    ], 
+    "projectName": "", 
+    "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

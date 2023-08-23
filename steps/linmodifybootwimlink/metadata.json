@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "9f4b7f06-79ea-4dde-bf65-6c0ff352357f", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "96282b09-24b2-43d7-9834-d2adc4c42c81", 
+    "key": "linmodifybootwimlink", 
+    "name": "LIN Modify boot.wim (link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}
