@@ -20,7 +20,7 @@
         }, 
         {
             "order": 150, 
-            "stepKey": "lindeployvmwaredriverslink"
+            "stepKey": "ksovirtdeployovirtdriverslink"
         }, 
         {
             "order": 200, 
@@ -28,7 +28,7 @@
         }, 
         {
             "order": 250, 
-            "stepKey": "lindeploystartnetcmdforwinpeonesxiforwin2019link"
+            "stepKey": "lindeploystartnetcmdforwinpeonovirtforwin2019link"
         }, 
         {
             "order": 300, 
@@ -36,7 +36,7 @@
         }, 
         {
             "order": 350, 
-            "stepKey": "lindeploywin2019unattendedconfigesxibiosfordriversonxdrivelink"
+            "stepKey": "lindeploywin2019unattendedconfigovirtbiosfordriversonxdrivelink"
         }, 
         {
             "order": 400, 
@@ -48,11 +48,11 @@
         }, 
         {
             "order": 500, 
-            "stepKey": "esxiwinperecreatewinbiosvirtualmachinelink"
+            "stepKey": "ovirtrecreatevirtualmachinelink"
         }, 
         {
-            "order": 550, 
-            "stepKey": "kscleanbuildfiles"
+            "order": 600, 
+            "stepKey": "lincleanbuildfileslink"
         }
     ], 
     "name": "LIN WinPE Kickstart BIOS Win 2019+oVirt with wimmountrw", 

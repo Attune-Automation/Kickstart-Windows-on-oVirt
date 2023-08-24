@@ -1,4 +1,5 @@
 {
+    "actionOnStepFail": null, 
     "concurrency": 1, 
     "enabled": true, 
     "externalUuid4": "5ad67a8e-1ac2-481f-8039-c0251249ee9f", 
@@ -7,7 +8,7 @@
     "links": [
         {
             "order": 0, 
-            "stepKey": "kscleanbuildfiles"
+            "stepKey": "kscleanbuildfilesdelete"
         }, 
         {
             "order": 50, 
@@ -67,7 +68,7 @@
         }, 
         {
             "order": 800, 
-            "stepKey": "kscleanbuildfiles"
+            "stepKey": "kscleanbuildfilesdelete"
         }
     ], 
     "name": "WinPE Kickstart Win2019+oVirt", 

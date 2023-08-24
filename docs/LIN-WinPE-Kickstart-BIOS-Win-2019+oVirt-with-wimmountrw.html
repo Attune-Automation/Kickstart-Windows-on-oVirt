@@ -230,8 +230,8 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#lindeployvmwaredriverslink">
-                            <strong>Step 4 -</strong> LIN Deploy VMWare Drivers (link)
+                        <a href="#ksovirtdeployovirtdriverslink">
+                            <strong>Step 4 -</strong> KS oVirt Deploy oVirt Drivers (link)
                         </a>
                     </p>
 
@@ -246,8 +246,8 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#lindeploystartnetcmdforwinpeonesxiforwin2019link">
-                            <strong>Step 6 -</strong> LIN Deploy startnet.cmd for WinPE on ESXi for Win2019 (link)
+                        <a href="#lindeploystartnetcmdforwinpeonovirtforwin2019link">
+                            <strong>Step 6 -</strong> LIN Deploy startnet.cmd for WinPE on oVirt for Win2019 (link)
                         </a>
                     </p>
 
@@ -262,8 +262,8 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#lindeploywin2019unattendedconfigesxibiosfordriversonxdrivelink">
-                            <strong>Step 8 -</strong> LIN Deploy Win2019 Unattended Config ESXi BIOS for Drivers on X Drive (link)
+                        <a href="#lindeploywin2019unattendedconfigovirtbiosfordriversonxdrivelink">
+                            <strong>Step 8 -</strong> LIN Deploy Win2019 Unattended Config oVirt BIOS for Drivers on X Drive (link)
                         </a>
                     </p>
 
@@ -286,16 +286,16 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#esxiwinperecreatewinbiosvirtualmachinelink">
-                            <strong>Step 11 -</strong> ESXi WinPE Recreate Win BIOS Virtual Machine (link)
+                        <a href="#ovirtrecreatevirtualmachinelink">
+                            <strong>Step 11 -</strong> oVirt Recreate Virtual Machine (link)
                         </a>
                     </p>
 
         
 
                     <p class="text-muted pt-2">
-                        <a href="#kscleanbuildfiles">
-                            <strong>Step 12 -</strong> KS Clean Build Files
+                        <a href="#lincleanbuildfileslink">
+                            <strong>Step 12 -</strong> LIN Clean Build Files (Link)
                         </a>
                     </p>
 
@@ -468,9 +468,9 @@
 
 
                     <div class="row pt-5">
-                        <h3 id="lindeployvmwaredriverslink">
-                            <a href="#lindeployvmwaredriverslink">
-                                <strong>Step 4 -</strong> LIN Deploy VMWare Drivers (link)
+                        <h3 id="ksovirtdeployovirtdriverslink">
+                            <a href="#ksovirtdeployovirtdriverslink">
+                                <strong>Step 4 -</strong> KS oVirt Deploy oVirt Drivers (link)
                             </a>
                         </h3>
                     </div>
@@ -516,9 +516,9 @@
 
 
                     <div class="row pt-5">
-                        <h3 id="lindeploystartnetcmdforwinpeonesxiforwin2019link">
-                            <a href="#lindeploystartnetcmdforwinpeonesxiforwin2019link">
-                                <strong>Step 6 -</strong> LIN Deploy startnet.cmd for WinPE on ESXi for Win2019 (link)
+                        <h3 id="lindeploystartnetcmdforwinpeonovirtforwin2019link">
+                            <a href="#lindeploystartnetcmdforwinpeonovirtforwin2019link">
+                                <strong>Step 6 -</strong> LIN Deploy startnet.cmd for WinPE on oVirt for Win2019 (link)
                             </a>
                         </h3>
                     </div>
@@ -564,9 +564,9 @@
 
 
                     <div class="row pt-5">
-                        <h3 id="lindeploywin2019unattendedconfigesxibiosfordriversonxdrivelink">
-                            <a href="#lindeploywin2019unattendedconfigesxibiosfordriversonxdrivelink">
-                                <strong>Step 8 -</strong> LIN Deploy Win2019 Unattended Config ESXi BIOS for Drivers on X Drive (link)
+                        <h3 id="lindeploywin2019unattendedconfigovirtbiosfordriversonxdrivelink">
+                            <a href="#lindeploywin2019unattendedconfigovirtbiosfordriversonxdrivelink">
+                                <strong>Step 8 -</strong> LIN Deploy Win2019 Unattended Config oVirt BIOS for Drivers on X Drive (link)
                             </a>
                         </h3>
                     </div>
@@ -636,9 +636,9 @@
 
 
                     <div class="row pt-5">
-                        <h3 id="esxiwinperecreatewinbiosvirtualmachinelink">
-                            <a href="#esxiwinperecreatewinbiosvirtualmachinelink">
-                                <strong>Step 11 -</strong> ESXi WinPE Recreate Win BIOS Virtual Machine (link)
+                        <h3 id="ovirtrecreatevirtualmachinelink">
+                            <a href="#ovirtrecreatevirtualmachinelink">
+                                <strong>Step 11 -</strong> oVirt Recreate Virtual Machine (link)
                             </a>
                         </h3>
                     </div>
@@ -660,9 +660,9 @@
 
 
                     <div class="row pt-5">
-                        <h3 id="kscleanbuildfiles">
-                            <a href="#kscleanbuildfiles">
-                                <strong>Step 12 -</strong> KS Clean Build Files
+                        <h3 id="lincleanbuildfileslink">
+                            <a href="#lincleanbuildfileslink">
+                                <strong>Step 12 -</strong> LIN Clean Build Files (Link)
                             </a>
                         </h3>
                     </div>
@@ -670,7 +670,7 @@
                     <div class="row">
                         <div class="description col px-0">
                             <p>
-                                
+                                <p>Removes the directory <code>{ksVmwareAttuneBaseDir}/build-{kickstartedNode.fqn}</code> and ISO file at <code>{ksVmwareAttuneBaseDir}/kickstart_{kickstartedNode.fqn}.iso</code>. </p>
                             </p>
                         </div>
                     </div>
@@ -680,46 +680,7 @@
 
 
 
-
-
-
-
-                        <div class="row">
-                            <p>
-                                Connect via ssh:
-                            </p>
-                        </div>
-                        <div class="row py-1">
-                            <code class="language-sql">
-ssh {linuxattuneuser}@{attuneosbuildserver}
-                            </code>
-                        </div>
-
-
-
     
-
-
-
-    <div class="row">
-        <p>
-            Execute the following script:
-        </p>
-    </div>
-    <div class="row">
-        <div class="col px-0">
-            <pre>
-                <code class="language-sql py-0">
-DIR=&quot;{ksVmwareAttuneBaseDir}/build-{targetServer.fqn}&quot;
-[[ -d ${DIR} ]] &amp;&amp; rm -rf ${DIR} &amp;&amp; echo &quot;Removed ${DIR}&quot; || \
-    echo &quot;No directory to remove.&quot;
-
-ISO=&quot;{ksVmwareAttuneBaseDir}/kickstart_{targetServer.fqn}.iso&quot;
-[[ -f ${ISO} ]] &amp;&amp; rm -fv ${ISO} || echo &quot;No ISO to remove.&quot;
-                </code>
-            </pre>
-        </div>
-    </div>
 
 
 

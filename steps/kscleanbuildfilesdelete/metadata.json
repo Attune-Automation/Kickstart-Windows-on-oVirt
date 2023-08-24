@@ -1,9 +1,10 @@
 {
+    "actionOnStepFail": null, 
     "enabled": true, 
     "externalUuid4": "943b3384-bd9a-4719-a2c4-d6659b5929a8", 
     "interpreter": 1, 
-    "key": "kscleanbuildfiles", 
-    "name": "KS Clean Build Files", 
+    "key": "kscleanbuildfilesdelete", 
+    "name": "KS Clean Build Files - DELETE", 
     "osCredKey": "linuxattuneuser", 
     "serverKey": "attuneosbuildserver", 
     "successExitCode": 0, 

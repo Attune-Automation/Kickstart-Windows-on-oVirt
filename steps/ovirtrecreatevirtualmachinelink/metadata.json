@@ -1,25 +1,25 @@
 {
     "actionOnStepFail": null, 
     "blueprintName": "", 
-    "blueprintUuid": "7eac3284-9e7d-41e1-96dc-acf098416045", 
+    "blueprintUuid": "71b73598-1c8f-4293-8de8-c80d50d5401e", 
     "cloneUrl": "", 
     "enabled": true, 
     "externalUuid4": "b670dbf0-1589-49d6-8902-beeb778b7288", 
-    "key": "esxiwinperecreatewinbiosvirtualmachinelink", 
-    "name": "ESXi WinPE Recreate Win BIOS Virtual Machine (link)", 
+    "key": "ovirtrecreatevirtualmachinelink", 
+    "name": "oVirt Recreate Virtual Machine (link)", 
     "parameterMap": [
         {
             "childParameterName": null, 
             "childParameterType": "c.s.s.b.phv.Text", 
-            "childParameterUuid": "92d11185-28c3-4c1e-9f4e-bf3d4c31cd13", 
+            "childParameterUuid": "4dda2e28-1c28-42be-9d13-3facb89f32b8", 
             "childProjectName": null, 
-            "childProjectUuid": "8140ab94-a4a9-481f-8ab1-9ee055ef78be", 
+            "childProjectUuid": "338f770e-fb2e-4c26-b0ab-71cf3963fa23", 
             "parentParameterKey": null, 
-            "parentStaticTextValue": "windows9Server64Guest"
+            "parentStaticTextValue": "Q35_SEA_BIOS"
         }
     ], 
     "projectName": "", 
-    "projectUuid": "8140ab94-a4a9-481f-8ab1-9ee055ef78be", 
+    "projectUuid": "338f770e-fb2e-4c26-b0ab-71cf3963fa23", 
     "projectVersion": "", 
     "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
 }

@@ -5,8 +5,8 @@
     "cloneUrl": "", 
     "enabled": true, 
     "externalUuid4": "e9cbea07-fdaa-4a99-b9d2-5bd64873762c", 
-    "key": "lindeploywin2019unattendedconfigesxibiosfordriversonxdrivelink", 
-    "name": "LIN Deploy Win2019 Unattended Config ESXi BIOS for Drivers on X Drive (link)", 
+    "key": "lindeploywin2019unattendedconfigovirtbiosfordriversonxdrivelink", 
+    "name": "LIN Deploy Win2019 Unattended Config oVirt BIOS for Drivers on X Drive (link)", 
     "parameterMap": [
         {
             "childParameterName": null, 

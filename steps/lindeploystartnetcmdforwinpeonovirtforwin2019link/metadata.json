@@ -5,8 +5,8 @@
     "cloneUrl": "", 
     "enabled": true, 
     "externalUuid4": "f86c3211-8710-4ac8-95a8-fdbbe0348f12", 
-    "key": "lindeploystartnetcmdforwinpeonesxiforwin2019link", 
-    "name": "LIN Deploy startnet.cmd for WinPE on ESXi for Win2019 (link)", 
+    "key": "lindeploystartnetcmdforwinpeonovirtforwin2019link", 
+    "name": "LIN Deploy startnet.cmd for WinPE on oVirt for Win2019 (link)", 
     "parameterMap": [
         {
             "childParameterName": null, 

@@ -1,4 +1,5 @@
 {
+    "actionOnStepFail": null, 
     "concurrency": 1, 
     "enabled": true, 
     "externalUuid4": "216c8873-8154-4a33-b456-f10a7d986a42", 
@@ -7,7 +8,7 @@
     "links": [
         {
             "order": 0, 
-            "stepKey": "kscleanbuildfiles"
+            "stepKey": "kscleanbuildfilesdelete"
         }, 
         {
             "order": 20, 
@@ -67,7 +68,7 @@
         }, 
         {
             "order": 540, 
-            "stepKey": "kscleanbuildfiles"
+            "stepKey": "kscleanbuildfilesdelete"
         }
     ], 
     "name": "WinPE Kickstart Win10+oVirt", 
