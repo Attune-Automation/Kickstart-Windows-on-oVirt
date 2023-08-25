@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "be654dfc-68f3-45b9-b0fc-8d8a34532fc7", 
+    "key": "kickstartedwindowsnode", 
+    "name": "Kickstarted Windows Node", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.WindowsServer"
+}

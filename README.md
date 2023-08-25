@@ -66,6 +66,9 @@ This Project contains the following Blueprints.
 ### Blueprints For Kickstart WinPE oVirt
 
 
+### Check oVirt Drivers Installed - Group
+
+
 ### Deploy Win10 ISO For WinPE
 
 
@@ -76,6 +79,9 @@ This Project contains the following Blueprints.
 
 
 ### KS oVirt Boot WinPE Recreate Virtual Machine
+
+
+### LIN WinPE Kickstart BIOS Win 2019+oVirt with wimmountrw
 
 
 ### Setup Attune ovirt-imageio
@@ -90,9 +96,6 @@ This Project contains the following Blueprints.
 ### WinPE Kickstart Win2019+oVirt
 
 
-### LIN WinPE Kickstart BIOS Win 2019+oVirt with wimmountrw
-
-
 
 
 
@@ -103,6 +106,9 @@ This Project contains the following Blueprints.
 | ---- | ---- | ---------------- | ------- |
 | Attune OS Build Server | Linux/Unix Node | `attuneosbuildserver` | This variable is used in the "Kickstart" build procedures, so the "Attune Server" can be used to build Attune servers. |
 | Attune Server | Linux/Unix Node | `attuneserver` |  |
+| Drivers Drop Directory | Text | `driversdropdirectory` | Put any extra drivers you want used by WinPE and the Windows installer here.<br><br>This can contain subfolders.<br><br>These are the "*.inf" files.<br><br>WinPE's startnet.cmd will recursively search for the "*.inf" files to install.<br><br>autounattend.xml will do the same.<br><br>This folder path relative to "{ksAttuneBaseDir}/build-{targetServer.fqn}".<br><br>Example: Setting this as "drop_in_drivers" will mean the drivers drop in directory will be at "{ksAttuneBaseDir}/build-{targetServer.fqn}/drop_in_drivers".<br><br>If "drop_in_drivers" exists, it's contents will be copied to "Drivers" folder.<br><br>If "drop_in_drivers" does not exist, it is ignored.<br><br>The contents of the Drivers folder will eventually seen at "X:\attune_drivers" by WinPE and the Windows installer. |
+| Kickstarted Node | Basic Node | `kickstartednode` |  |
+| Kickstarted Windows Node | Windows Node | `kickstartedwindowsnode` |  |
 | Kickstart Organisation Name | Text | `kickstartorganisationname` |  |
 | KS VMWare: Attune Base Dir | Text | `ksvmwareattunebasedir` |  |
 | KS: Windows Interface Alias | Text | `kswindowsinterfacealias` | oVirt Deployments = "Ethernet"<br>ESXi Deployments = "Ethernet0"<br><br>This is the "InternetAlias" of the interface shown when you run "get-netipaddress" from powershell on the machine. |
@@ -111,6 +117,7 @@ This Project contains the following Blueprints.
 | oVirt: Bios Type | Text | `ovirtbiostype` | Valid Values are (they must be in all capitals):<br>1. CLUSTER_DEFAULT - Use the cluster-wide default.<br>2. I440FX_SEA_BIOS - i440fx chipset with SeaBIOS.<br>3. Q35_OVMF - q35 chipset with OVMF (UEFI) BIOS.<br>4. Q35_SEA_BIOS - q35 chipset with SeaBIOS.<br>5. Q35_SECURE_BOOT- q35 chipset with OVMF (UEFI) BIOS with SecureBoot enabled.<br><br>https://ovirt.github.io/ovirt-engine-api-model/4.5/#types/bios_type |
 | oVirt: Cluster Name | Text | `ovirtclustername` |  |
 | oVirt: CPU Count | Text | `ovirtcpucount` |  |
+| oVirt: Datacenter Name | Text | `ovirtdatacentername` |  |
 | oVirt: Disk Interface | Text | `ovirtdiskinterface` | SATA or IDE required for Windows<br>VIRTIO_SCSI for windows after driver install<br>VIRTIO for Linux |
 | oVirt: Disk Storage Name | Text | `ovirtdiskstoragename` |  |
 | oVirt: Engine API User | Basic Credential | `ovirtengineapiuser` |  |

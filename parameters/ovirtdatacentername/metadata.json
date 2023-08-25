@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "959a7289-ec30-432d-8a88-33d94e114fa7", 
+    "key": "ovirtdatacentername", 
+    "name": "oVirt: Datacenter Name", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.Text"
+}

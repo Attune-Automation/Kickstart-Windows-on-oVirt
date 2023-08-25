@@ -1,0 +1,8 @@
+if (Get-WmiObject Win32_PnPSignedDriver | `
+    select devicename | `
+    findstr "Red Hat VirtIO SCSI pass-through controller") {
+    Write-Host "oVirt drivers are installed."
+} else {
+    Write-Host "oVirt drivers are not installed"
+    exit 1
+}

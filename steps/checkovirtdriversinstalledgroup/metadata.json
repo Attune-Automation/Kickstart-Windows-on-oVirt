@@ -1,0 +1,16 @@
+{
+    "actionOnStepFail": "stop", 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "71002eef-aaf1-4580-ab8a-1d572fb70eb1", 
+    "isBlueprint": true, 
+    "key": "checkovirtdriversinstalledgroup", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "checkovirtdriversinstalled"
+        }
+    ], 
+    "name": "Check oVirt Drivers Installed - Group", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

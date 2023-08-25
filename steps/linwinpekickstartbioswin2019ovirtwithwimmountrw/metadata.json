@@ -11,47 +11,51 @@
             "stepKey": "lincleanbuildfileslink"
         }, 
         {
-            "order": 50, 
-            "stepKey": "lincopywinpeplainbiosisotowinpeisolink"
-        }, 
-        {
             "order": 100, 
-            "stepKey": "linextractwinpeisotowinpestaginglink"
+            "stepKey": "lincopywinpewin2019plainbiosisotowinpeisolink"
         }, 
         {
             "order": 150, 
-            "stepKey": "ksovirtdeployovirtdriverslink"
+            "stepKey": "linextractwinpeisotowinpestaginglink"
         }, 
         {
             "order": 200, 
-            "stepKey": "lincopynetworkdriverdropindirectorylink"
+            "stepKey": "ksovirtdeploydrivers2link"
         }, 
         {
             "order": 250, 
-            "stepKey": "lindeploystartnetcmdforwinpeonovirtforwin2019link"
+            "stepKey": "lincopynetworkdriverdropindirectorylink"
         }, 
         {
             "order": 300, 
-            "stepKey": "lincreatecustomwimcontainingscriptforwinrmhttpslink"
+            "stepKey": "lindeploystartnetcmdforwinpeonovirtforwin2019link"
         }, 
         {
             "order": 350, 
-            "stepKey": "lindeploywin2019unattendedconfigovirtbiosfordriversonxdrivelink"
+            "stepKey": "lincreatecustomwimcontainingscriptforwinrmhttpslink"
         }, 
         {
             "order": 400, 
-            "stepKey": "linmodifybootwimlink"
+            "stepKey": "lindeploywin2019unattendedconfigovirtbiosfordriversonxdrivelink"
         }, 
         {
             "order": 450, 
-            "stepKey": "lincreatebioswinpebootisogroupfromwinpestaginglink"
+            "stepKey": "linmodifybootwimlink"
         }, 
         {
             "order": 500, 
+            "stepKey": "lincreatebioswinpebootisogroupfromwinpestaginglink"
+        }, 
+        {
+            "order": 550, 
             "stepKey": "ovirtrecreatevirtualmachinelink"
         }, 
         {
             "order": 600, 
+            "stepKey": "winwinrmhttpswait120s"
+        }, 
+        {
+            "order": 650, 
             "stepKey": "lincleanbuildfileslink"
         }
     ], 
