@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "cd461ded-bb05-468d-a6b0-973c4f7c00ee", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "151a4ac6-e2b4-49f1-bba6-63c9cd435391", 
+    "key": "ovirtsetdiskinterfacetovirtioscsilink", 
+    "name": "oVirt Set Disk Interface to VIRTIO_SCSI (link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "338f770e-fb2e-4c26-b0ab-71cf3963fa23", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

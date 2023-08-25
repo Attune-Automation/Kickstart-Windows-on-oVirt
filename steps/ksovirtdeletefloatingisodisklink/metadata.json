@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "d5deac60-5c6f-4399-a048-7ff9f3ef1076", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "2062e751-fdc7-4da0-a4ee-70e4049a79cf", 
+    "key": "ksovirtdeletefloatingisodisklink", 
+    "name": "KS oVirt Delete Floating ISO Disk (link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "338f770e-fb2e-4c26-b0ab-71cf3963fa23", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

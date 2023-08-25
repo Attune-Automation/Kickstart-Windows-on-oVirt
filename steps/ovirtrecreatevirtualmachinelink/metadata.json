@@ -16,6 +16,15 @@
             "childProjectUuid": "338f770e-fb2e-4c26-b0ab-71cf3963fa23", 
             "parentParameterKey": null, 
             "parentStaticTextValue": "Q35_SEA_BIOS"
+        }, 
+        {
+            "childParameterName": null, 
+            "childParameterType": "c.s.s.b.phv.Text", 
+            "childParameterUuid": "059a1460-fa6d-425d-8f9a-c09ecdd156f8", 
+            "childProjectName": null, 
+            "childProjectUuid": "338f770e-fb2e-4c26-b0ab-71cf3963fa23", 
+            "parentParameterKey": null, 
+            "parentStaticTextValue": "SATA"
         }
     ], 
     "projectName": "", 

@@ -56,6 +56,14 @@
         }, 
         {
             "order": 650, 
+            "stepKey": "ovirtsetdiskinterfacetovirtioscsilink"
+        }, 
+        {
+            "order": 700, 
+            "stepKey": "ksovirtdeletefloatingisodisklink"
+        }, 
+        {
+            "order": 750, 
             "stepKey": "lincleanbuildfileslink"
         }
     ], 
