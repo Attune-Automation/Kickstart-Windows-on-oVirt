@@ -60,10 +60,14 @@
         }, 
         {
             "order": 700, 
-            "stepKey": "ksovirtdeletefloatingisodisklink"
+            "stepKey": "deletecustomsetupps1link"
         }, 
         {
             "order": 750, 
+            "stepKey": "ksovirtdeletefloatingisodisklink"
+        }, 
+        {
+            "order": 800, 
             "stepKey": "lincleanbuildfileslink"
         }
     ], 

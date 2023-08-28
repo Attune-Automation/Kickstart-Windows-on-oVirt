@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "77ee929b-0231-4fea-bb80-372aee816e74", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "904aae56-b66e-462b-87c1-c52e759c8dff", 
+    "key": "deletecustomsetupps1link", 
+    "name": "Delete custom_setup.ps1 (link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}
