@@ -7,17 +7,7 @@
     "externalUuid4": "e9cbea07-fdaa-4a99-b9d2-5bd64873762c", 
     "key": "lindeploywin2019unattendedconfigovirtbiosfordriversonxdrivelink", 
     "name": "LIN Deploy Win2019 Unattended Config oVirt BIOS for Drivers on X Drive (link)", 
-    "parameterMap": [
-        {
-            "childParameterName": null, 
-            "childParameterType": "c.s.s.b.phv.Text", 
-            "childParameterUuid": "6942c5d9-c0a5-4dd8-a8b8-d43c0dc75654", 
-            "childProjectName": null, 
-            "childProjectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
-            "parentParameterKey": null, 
-            "parentStaticTextValue": "Ethernet Instance 0"
-        }
-    ], 
+    "parameterMap": [], 
     "projectName": "", 
     "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
     "projectVersion": "", 

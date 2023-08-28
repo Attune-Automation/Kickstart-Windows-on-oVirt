@@ -1,0 +1,25 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "aac7a818-d573-4cbe-8d22-b343a16dae94", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "c17a4481-4a7b-47ad-8523-4d40be0d5588", 
+    "key": "lincreatecustomwimcontainingcustomsetupps1link", 
+    "name": "LIN Create custom.wim Containing custom_setup.ps1 (link)", 
+    "parameterMap": [
+        {
+            "childParameterName": null, 
+            "childParameterType": "c.s.s.b.phv.Text", 
+            "childParameterUuid": "6942c5d9-c0a5-4dd8-a8b8-d43c0dc75654", 
+            "childProjectName": null, 
+            "childProjectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+            "parentParameterKey": null, 
+            "parentStaticTextValue": "Ethernet Instance 0"
+        }
+    ], 
+    "projectName": "", 
+    "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}
