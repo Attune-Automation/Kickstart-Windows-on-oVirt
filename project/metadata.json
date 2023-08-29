@@ -1,6 +1,6 @@
 {
     "externalUuid4": "f3f802d5-3c48-4fd7-992c-8e8800c5329a", 
-    "key": "kickstartwindowsonovirt", 
-    "name": "Kickstart Windows on oVirt", 
+    "key": "kickstartwindowsosonovirt", 
+    "name": "Kickstart Windows OS on oVirt", 
     "revision": "145c6dc54454"
 }
