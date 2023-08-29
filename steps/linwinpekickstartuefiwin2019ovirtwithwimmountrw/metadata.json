@@ -1,0 +1,16 @@
+{
+    "actionOnStepFail": "stop", 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "e40579be-90d4-4cbd-b1af-9becad525a4d", 
+    "isBlueprint": true, 
+    "key": "linwinpekickstartuefiwin2019ovirtwithwimmountrw", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "lincleanbuildfileslink"
+        }
+    ], 
+    "name": "LIN WinPE Kickstart UEFI Win 2019+oVirt with wimmountrw", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

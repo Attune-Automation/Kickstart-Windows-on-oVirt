@@ -84,6 +84,9 @@ This Project contains the following Blueprints.
 ### LIN WinPE Kickstart BIOS Win 2019+oVirt with wimmountrw
 
 
+### LIN WinPE Kickstart UEFI Win 2019+oVirt with wimmountrw
+
+
 ### Setup Attune ovirt-imageio
 
 
